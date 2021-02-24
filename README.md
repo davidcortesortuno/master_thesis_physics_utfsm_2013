@@ -25,6 +25,11 @@ theoretical derivations predicted the asymmetry on the spin wave spectrum that
 could be verified using Brillouin Light Scattering. This has been proved in
 multiple studies now.
 
+The original thesis can be found in the `pdf` folder. The source file requires
+updating of the references.
+
+# Copyright
+
 The thesis is copyrighted by the UTFSM in Chile. If you want to cite any of the
 results, you can cite the aforementioned paper or using the following
 bibtex entry:
