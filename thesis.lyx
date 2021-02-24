@@ -1,0 +1,7507 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass memoir
+\begin_preamble
+\makeatletter
+\newcommand\thickhrulefill{\leavevmode \leaders \hrule height 1ex \hfill \kern \z@}
+\setlength\midchapskip{10pt}
+%
+\makechapterstyle{VZ14}{
+\renewcommand\chapternamenum{}
+\renewcommand\printchaptername{}
+\renewcommand\chapnamefont{\Large\scshape}
+\renewcommand\printchapternum{%
+\chapnamefont\null\thickhrulefill\quad
+\@chapapp\space\thechapter\quad\thickhrulefill}
+\renewcommand\printchapternonum{%
+\par\thickhrulefill\par\vskip\midchapskip
+\hrule\vskip\midchapskip
+}
+\renewcommand\chaptitlefont{\Huge\scshape\centering}
+\renewcommand\afterchapternum{%
+\par\nobreak\vskip\midchapskip\hrule\vskip\midchapskip}
+\renewcommand\afterchaptertitle{%
+\par\vskip\midchapskip\hrule\nobreak\vskip\afterchapskip}
+}
+\makeatother
+\chapterstyle{VZ14}
+%\usepackage{gfsartemisia}
+\usepackage[light]{kurier}
+%\renewcommand{\tablename}{Tabla}
+\renewcommand{\arraystretch}{1.8}
+%%%%%%%%%%%%%%%%%%
+\usepackage{titlesec}
+\decimalpoint
+\usepackage{lipsum} % for sample text
+\newenvironment{dedication}{\phantom{}\vfill\begin{flushright}\begin{minipage}{0.5\textwidth}\raggedleft}{\end{minipage}\end{flushright}\vfill}
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{oran}{rgb}{1,0.27,0.0}
+%
+\hypersetup{colorlinks,breaklinks,
+            citecolor=oran,
+            urlcolor=oran,
+            linkcolor=oran}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language spanish
+\language_package none
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_author "David Cortés Ortuño"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 4cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle companion
+\tracking_changes false
+\output_changes false
+\html_math_output 3
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+tablename}{Tabla}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace -2cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename figures/Isotipo Color.jpg
+	lyxscale 30
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+
+\series bold
+\size large
+UNIVERSIDAD TÉCNICA FEDERICO SANTA MARÍA
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+
+\size large
+FACULTAD DE CIENCIAS 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+
+\size large
+DEPARTAMENTO DE FÍSICA 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+\align center
+
+\size largest
+INFLUENCIA DE LAS INTERACCIONES DE DZYALOSHINSKII-MORIYA EN EL ESPECTRO
+ DE ONDAS DE ESPÍN DE LÁMINAS FERROMAGNÉTICAS DELGADAS
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Tesis de Grado presentada por
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
+Sr.
+ David Ignacio Cortés Ortuño
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+como requisito parcial para optar al grado de
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
+Magíster en Ciencias, Mención Física
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Profesor Guía
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
+Dr.
+ Pedro Miguel Landeros Silva
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Valparaíso - Chile
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+2013
+\size default
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+TÍTULO DE LA TESIS:
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+\size large
+INFLUENCIA DE LAS INTERACCIONES DE DZYALOSHINSKII-MORIYA EN EL ESPECTRO
+ DE ONDAS DE ESPÍN DE
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+\size large
+LÁMINAS FERROMAGNÉTICAS DELGADAS
+\series default
+\size default
+
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+AUTOR:
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+\size large
+DAVID IGNACIO CORTÉS ORTUÑO
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+TRABAJO DE TESIS, presentado en cumplimiento parcial de los requisitos para
+ el Grado de Magíster en Ciencias, Mención Física de la Universidad Técnica
+ Federico Santa María.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Dr.
+ Pedro Landeros Silva
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+____________________________
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Universidad Técnica Federico Santa María
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Dr.
+ Pedro Orellana Dinamarca
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+____________________________
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Universidad Técnica Federico Santa María
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Dr.
+ Alvaro Núñez Vásquez
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+____________________________
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Universidad de Chile
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+Valparaíso, Chile.
+ 2013
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+thepage}{
+\backslash
+roman{page}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{dedication}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dedicado a mis padres.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{dedication}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Agradecimientos
+\end_layout
+
+\begin_layout Standard
+Es importante para mí destacar en este espacio, a todos los que de alguna
+ forma, me han apoyado para poder concluir este trabajo, el cual ha sido
+ un gran desafío en el plan de Magíster, y me ha llevado a lograr grandes
+ objetivos que tenía considerados al comenzar mis estudios.
+ Primero que todo, quisiera mencionar a mi familia ya que, a pesar de que
+ es grande la distancia que me separa de algunos de ellos, siempre han sido
+ una fuente constante de ánimo para continuar y concretar mis proyectos.
+ Quiero distinguir además, a mi hermano, con quien he podido confiar en
+ que las dificultades no son insuperables y por la gran compañía que me
+ ha otorgado a lo largo de estos años.
+ También, quisiera agradecer a mi profesor tutor, Pedro Landeros, con quien
+ la experiencia de trabajar ha sido muy enriquecedora.
+ El constante apoyo en todo ámbito académico y la cercanía para poder discutir
+ en investigación, ha facilitado en gran medida la realización de mis proyectos
+ personales.
+ Haber trabajado junto con él en magnetismo, me ha dado grandes motivaciones,
+ y ahora se ha convertido en uno de mis intereses, por lo que será el área
+ en la cual continuaré mis futuros estudios.
+ Además, quiero mencionar a mi primer tutor, David Laroze, con quien aun
+ mantengo comunicación.
+ Me ha guiado en varias de mis decisiones, me ha recomendado a lo largo
+ de mi carrera y fue el inspirador para que pudiera comenzar este postgrado.
+ No puedo dejar de mencionar, a todos mis amigos, en especial, a los que
+ han sido más cercanos estos años, el Omar, Diego S., el Gepo, la Romi, el
+ ES y el Rob, quienes han sido imprescindibles para poder disfrutar y poder
+ mantener la felicidad, junto a sus compañías, ya que las grandes experiencias
+ de vida son igual de importantes para querer crecer como persona.
+ Hay varios más que no he nombrado, pero han sido en igual medida un gran
+ aporte en algún momento de mi vida.
+ 
+\end_layout
+
+\begin_layout Standard
+Por último, agradezco la gran ayuda que me aportaron la UTFSM, con sus proyectos
+ (PIIC) y becas internas; CONICYT, con la Beca de Magíster, y el Proyecto
+ FB0807 de CEDENNA, como apoyos continuos para financiar e incentivar mis
+ estudios.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+David
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Introducción
+\end_layout
+
+\begin_layout Standard
+En las últimas décadas, el estudio de la dinámica de espines en sistemas
+ magnéticos ha sido de gran importancia, ya que gracias a diversas técnicas,
+ como la Resonancia Ferromagnética (FMR) o la Dispersión de Luz de Brillouin
+ (BLS), ha sido posible caracterizar sus propiedades, entre las cuales podemos
+ nombrar las frecuencias o campos de resonancia, anchos de línea, anisotropías
+ del material, etc.
+ En este contexto, uno de los sistemas de interés han sido las láminas (films)
+ magnéticas delgadas, las cuales presentan una serie de fenómenos nuevos
+ (e.g.
+ dispersión de dos magnones) y cuyo estudio ha estado orientado principalmente
+ en su aplicación en la grabación magnética de datos.
+ 
+\end_layout
+
+\begin_layout Standard
+Este trabajo está centrado en describir este tipo de sistemas.
+ Específicamente, trataremos con láminas ferromagnéticas muy delgadas que
+ presenten algún tipo de asimetría en su estructura cristalográfica o en
+ la superficie.
+ Esto genera nuevas interacciones entre espines, en adición a las usuales
+ en este tipo de sistemas (entiéndase, anisotropías, interacciones de intercambi
+o o dipolares o interacción frente a un campo externo), y las cuales se
+ conocen como interacciones de Dzyaloshinskii-Moriya.
+ A causa de este nuevo fenómeno, se inducirán cambios en el espectro de
+ ondas de espín y en las susceptibilidades dinámicas en el ferromagneto.
+ 
+\end_layout
+
+\begin_layout Standard
+Para introducir el tema, en las primeras secciones del primer capítulo se
+ expondrá la teoría general, en la que hablaremos del formalismo teórico
+ (micromagnetismo) con el cual abordaremos el problema y donde se describirán
+ las interacciones presentes en estos sistemas ferromagnéticos.
+ También, se dará una breve descripción de las ondas de espín, las cuales
+ son el medio por el cual caracterizamos las propiedades del sistema y,
+ debido a que en las últimas secciones se tratará con susceptibilidades
+ dinámicas y frecuencias y campos de resonancia, incluimos una sección dedicada
+ a la técnica de FMR junto con un ejemplo sencillo, que dejará más claro,
+ aparte de la técnica en sí mismo, la forma en que podrían excitarse estos
+ sistema para obtener ondas de espín y cómo responden frente a esto, lo
+ cual se describe a través del espectro de absorción del material.
+ En las secciones siguientes, ya se abordará el problema a través del formalismo
+ adoptado (en nuestro caso, con el hamiltoniano), para un sistema en forma
+ general, sin incluir aun las interacciones de Dzyaloshinskii-Moriya explícitame
+nte.
+ Luego, en el segundo capítulo, se utilizarán los resultados anteriores
+ para aplicarlos directamente a los sistemas asimétricos y dar a conocer
+ el espectro de ondas de espín del sistema, el espectro de absorción y la
+ influencia de estas interacciones adicionales en la lámina ferromagnética.
+ Finalmente, los cálculos detallados expuestas en cada sección, estarán
+ en los apéndices respectivos.
+ El sistema de unidades adoptado para los cálculos a lo largo de todo el
+ trabajo, será el cgs.
+\end_layout
+
+\begin_layout Standard
+Por último, es importante destacar que el tema de este trabajo, dio lugar
+ a una publicación [D.
+ Cortés-Ortuño
+\emph on
+ 
+\emph default
+and P.
+ Landeros
+\emph on
+, Influence of the Dzyaloshinskii–Moriya interaction on the spin-wave spectra
+ of thin films
+\emph default
+, J.
+ Phys.: Condens.
+ Matter 
+\series bold
+25
+\series default
+:156001,2013].
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begingroup 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hypersetup{linkcolor=black}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+endgroup
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+thepage}{
+\backslash
+arabic{page}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Micromagnetismo
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Micromagnetismo"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Al describir un sistema, las propiedades magnéticas que lo caracterizan
+ se deben casi completamente al movimiento orbital y al espín de los electrones,
+ los cuales generan lo que se conoce como 
+\emph on
+momento magnético, 
+\emph default
+que es una cantidad pseudo vectorial y mide la tendencia del objeto a orientarse
+ con un campo magnético.
+ De acuerdo a esto, es posible distinguir a los materiales en dos grupos,
+ aquellos que poseen un momento magnético permanente y aquellos que no lo
+ tienen; esto último, se debe a que en ciertos materiales, el momento magnético
+ debido al movimiento orbital de los electrones se cancela mutuamente con
+ el que provoca el espín, lo que origina un momento magnético nulo en los
+ átomos.
+ Este fenómeno ocurre en la mayoría de los materiales y se conoce como 
+\emph on
+diamagnetismo.
+ 
+\emph default
+En cambio, en otros sistemas, la cancelación es incompleta y los átomos
+ poseen un momento permanente.
+ En este caso, los materiales pueden clasificarse entre los que poseen un
+ grado de ordenamiento a largo alcance, bajo cierta temperatura crítica,
+ que se se conocen como: ferromagnetos, antiferromagnetos y ferrimagnetos,
+ dependiendo de cómo se alinean sus espines
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Nos referimos a espines porque en la mayoría de los ferromagnetos, la contribuci
+ón al momento magnético del movimiento orbital, es muy pequeño.
+\end_layout
+
+\end_inset
+
+; y aquellos que no poseen esta organización.
+ Nosotros nos centraremos en los ferromagnetos, los que poseen un momento
+ permanente y cuyos espines se alinean de forma paralela bajo una temperatura
+ crítica, conocida como Temperatura de Curie.
+ En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mag-materials-clasification"
+
+\end_inset
+
+ se muestra un esquema con las distintas clasificaciones que acabamos de
+ nombrar.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/magnetic-materials-clasification.pdf
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Clasificación de los materiales según sus propiedades magnéticas (adaptado
+ de la referencia 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Stancil2009"
+literal "true"
+
+\end_inset
+
+).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mag-materials-clasification"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El ferromagnetismo tiene su fundamento en la mecánica cuántica, donde el
+ hecho de que los espines se ordenen en forma paralela, en ausencia de campo
+ magnético y bajo cierta temperatura, viene de la interacción entre éstos
+ (conocida como interacción de intercambio), y se describe usualmente mediante
+ el Hamiltoniano de Heisenberg.
+ Resolver este sistema en forma exacta, debido al gran número de átomos
+ es imposible ya en la teoría cuántica, de forma que uno inevitablemente
+ debe recurrir a alguna aproximación.
+ Entonces, una forma de abordar el problema, es utilizando la teoría del
+ 
+\emph on
+micromagnetismo
+\emph default
+, que consiste en considerar los espines como vectores clásicos y el medio
+ como un continuo.
+ Esta idea comenzó con los trabajos de Weiss (1907), quien trató de explicar
+ estructuras de dominios introduciendo la idea de un campo molecular, responsabl
+e de la orientación de la magnetización.
+ Más tarde, Heisenberg (1928) y Dirac (1928), justificaron este campo molecular
+ a través de la mecánica cuántica, como un campo de intercambio que tiende
+ a alinear los espines, explicando el fenómeno de ferromagnetismo.
+ Esto abrió las puertas hacia una teoría mesoscópica del magnetismo, que
+ vinculara la teoría fenomenológica de los campos electromagnéticos de Maxwell,
+ y la mecánica cuántica.
+ El primer intento por analizar estados magnéticos inhomogéneos, se deben
+ a Bloch (1932), pero el paso definitivo hacia una teoría continua del magnetism
+o, ocurrió en el año 1935 con una publicación de Landau y Lifshitz, considerando
+ estructuras de paredes que separaban dominios antiparalelos, y fue desarrollada
+ alrededor de 1940 por Brown, en una serie de trabajos que establecieron
+ la perspectiva moderna del micromagnetismo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kronmuller,Aharoni2001"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Básicamente, lo que vamos a considerar, será la magnetización como un pseudo
+ vector 
+\begin_inset Formula $\mathbf{M}(\mathbf{x})$
+\end_inset
+
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Esencialmente, la aproximación podría verse como promediar el valor de los
+ espines del sistema en celdas unitarias de volumen y hacerlas infinitesimalment
+e pequeñas.
+ Es decir, si en el sitio 
+\begin_inset Formula $j$
+\end_inset
+
+ tenemos el espín 
+\begin_inset Formula $\mathbf{S}_{j}$
+\end_inset
+
+, introducimos el vector magnetización como 
+\begin_inset Formula $\mathbf{M}(\mathbf{x}_{j})=\overline{N}\mu_{B}\tilde{g}\mathbf{S}_{j}$
+\end_inset
+
+, con 
+\begin_inset Formula $\overline{N}=N/V$
+\end_inset
+
+, como el número de espines (N) en el volumen de una celda unitaria (
+\begin_inset Formula $V$
+\end_inset
+
+), 
+\begin_inset Formula $\mu_{B}$
+\end_inset
+
+ el magnetón de Bohr y 
+\begin_inset Formula $\tilde{g}$
+\end_inset
+
+ como el factor de Landé.
+ En el límite infinitesimal, 
+\begin_inset Formula $\mathbf{M}(\mathbf{x}_{j})/\left|\mathbf{M}(\mathbf{x}_{j})\right|\longrightarrow\mathbf{M}(\mathbf{x})/M(\mathbf{x})$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+que depende de las posiciones espaciales 
+\begin_inset Formula $\mathbf{x}=(x,y,z)$
+\end_inset
+
+ y temporal 
+\begin_inset Formula $t$
+\end_inset
+
+, en una distribución continua.
+ 
+\end_layout
+
+\begin_layout Standard
+El enfoque principal del micromagnetismo se basa en aproximar las energías
+ del sistema, que serán funciones de esta magnetización continua 
+\begin_inset Formula $\mathbf{M}(\mathbf{x})$
+\end_inset
+
+; y luego minimizarlas, de manera de obtener las estructuras de la magnetización
+ estática.
+ En general, es muy complicado poder obtener una configuración de la magnetizaci
+ón de esta forma, la cual sea realmente un mínimo, por lo que hay técnicas
+ de asumir una estructura para 
+\begin_inset Formula $\mathbf{M}(\mathbf{x})$
+\end_inset
+
+ mediante ciertos parámetros.
+ Con esto, es posible estudiar campos de nucleación o modos de reversión.
+ En nuestro caso, nos centraremos en calcular la energía de un sistema de
+ geometría simple, que será una película magnética delgada, la cual se saturará
+ con un campo magnético externo y luego será llevada al desequilibrio con
+ un pequeña perturbación (un campo de microondas).
+ Con esto, obtendremos el Hamiltoniano del sistema y se utilizará para poder
+ calcular propiedades de las ondas de espines en el material.
+\end_layout
+
+\begin_layout Standard
+Otra forma de abordar el micromagnetismo, es directamente a través de la
+ ecuación de Landau-Lifshitz-Gilbert (LLG)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Esta ecuación es posible obtenerla a mediante un tratamiento semi-clásico
+ a partir de la dinámica de momentos angulares 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Miltat2002"
+literal "true"
+
+\end_inset
+
+ con la ecuación de Heisenberg.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial\mathbf{M}}{\partial t}=-\gamma\mathbf{M}\times\mathbf{H}+\frac{g}{M}\mathbf{M}\times\frac{\partial\mathbf{M}}{\partial t},\label{eq:Landau-Lifshitz-Gilbert}
+\end{equation}
+
+\end_inset
+
+en la que 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ es el radio giromagnético y 
+\begin_inset Formula $g$
+\end_inset
+
+ la constante de amortiguamiento de Gilbert (damping).
+ Esta ecuación ilustra la evolución temporal del sistema a través de la
+ dinámica de los momentos magnéticos 
+\begin_inset Formula $\mathbf{M}$
+\end_inset
+
+ y nos permite encontrar los mínimos considerando condiciones de equilibrio.
+ Una técnica que utiliza fundamentalmente esta ecuación de movimiento y
+ que ha tenido alto revuelo en los últimos años, son las simulaciones micromagné
+ticas ya que, en estos tiempos, han sido mucho más accesibles las máquinas
+ con alta capacidad computacional, lo cual nos proporciona otra herramienta
+ para visualizar los problemas.
+\end_layout
+
+\begin_layout Standard
+En las próximas secciones se describirán las energías involucradas en un
+ sistema ferromagnético y su correspondiente expresión en la aproximación
+ micromagnética.
+ En principio, se deben considerar siempre las energías de intercambio,
+ la magnetostática y la de anisotropía.
+ En caso de haber un campo externo se tendrá una energía de Zeeman.
+ Además de éstos términos, dedicaremos una sección a discutir la energía
+ de las interacciones asimétricas, conocidas como interacciones de Dzyaloshinski
+i-Moriya, que sólo se presentan en determinadas clases de materiales.
+ Es bueno señalar que el campo efectivo asociado a estas interacciones se
+ puede calcular como
+\begin_inset Formula 
+\begin{equation}
+\mathbf{H}=-\frac{\delta w}{\delta\mathbf{M}}=-\left(\frac{\partial w}{\partial\mathbf{M}}-\frac{d}{dt}\left(\frac{\partial w}{\partial\mathbf{M}}\right)-\nabla\cdot\frac{\partial w}{\partial\left(\nabla\mathbf{M}\right)}\right)\label{eq:field-derivation}
+\end{equation}
+
+\end_inset
+
+en que 
+\begin_inset Formula $w$
+\end_inset
+
+ es la densidad de energía, que depende de 
+\begin_inset Formula $\mathbf{M}(\mathbf{x})$
+\end_inset
+
+ , correspondiente a cierta interacción del sistema.
+\end_layout
+
+\begin_layout Section
+Energías del sistema
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Energías-del-sistema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Energía de Intercambio (Exchange energy)
+\end_layout
+
+\begin_layout Standard
+La interacción de intercambio es la responsable del ferromagnetismo y su
+ origen no tiene análogo clásico.
+ Fundamentalmente, es un efecto cuántico que ocurre a causa al traslape
+ de las funciones de ondas de electrones vecinos, la cual es antisimétrica,
+ de forma que la energía electrostática se reduce cuando sus espines son
+ paralelos.
+ Entonces, esta configuración es más estable y los espines tienden a alinearse.
+ Una forma de describir este fenómeno en una red (lattice) de átomos, es
+ a través del Hamiltoniano de Heisenberg
+\begin_inset Formula 
+\[
+\mathcal{H}_{\text{ex}}=-\sum_{i,j}J_{ij}\mathbf{S}_{i}\cdot\mathbf{S}_{j},
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $\mathbf{S}_{i}$
+\end_inset
+
+ se refiere al espín total del i-ésimo sitio del arreglo.
+ 
+\begin_inset Formula $J_{ij}$
+\end_inset
+
+ es la integral de intercambio y hasta ahora, calcularla de primeros principios,
+ no ha dado resultados muy precisos.
+ Esta interacción es de corto alcance, por lo que generalmente 
+\begin_inset Formula $J_{ij}$
+\end_inset
+
+ se toma como un parámetro 
+\begin_inset Formula $J$
+\end_inset
+
+ que se ajusta con datos experimentales, frecuentemente midiendo ondas de
+ espín, y la suma en 
+\begin_inset Formula $j$
+\end_inset
+
+ se realiza solo a vecinos cercanos.
+ Para obtener un expresión en el límite micromagnético, consideramos los
+ espines como vectores clásicos.
+ En un material homogéneo, la longitud de los espines se conserva, por lo
+ que la expresión nos queda
+\begin_inset Formula 
+\[
+\mathcal{H}_{\text{ex}}=-S^{2}\sum_{i,j}J_{ij}\hat{s}_{i}\cdot\hat{s}_{j}=-S^{2}J\sum_{i,j}\cos\phi_{ij},
+\]
+
+\end_inset
+
+donde hemos denotado 
+\begin_inset Formula $\hat{s}_{i}$
+\end_inset
+
+ al vector unitario en la dirección de 
+\begin_inset Formula $\mathbf{S}_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $S=\left|\mathbf{S_{i}}\right|$
+\end_inset
+
+ y 
+\begin_inset Formula $\phi_{ij}$
+\end_inset
+
+ es el ángulo que forman los espines 
+\begin_inset Formula $i$
+\end_inset
+
+,
+\begin_inset Formula $j$
+\end_inset
+
+.
+ Debido a que la interacción de intercambio favorece el alineamiento paralelo
+ entre los espines, los ángulos que forman varían lentamente, así que los
+ consideramos pequeños, de manera que
+\begin_inset Formula 
+\[
+\mathcal{H}_{\text{ex}}\simeq-S^{2}J\sum_{i,j}\left(1-\frac{\phi_{ij}^{2}}{2}\right).
+\]
+
+\end_inset
+
+El primer término que se obtiene de esta expresión, es una constante, por
+ lo que podemos redefinir la energía y evitarlo en los próximos cálculos.
+ Un tratamiento más elegante y matemático de las próximas derivaciones,
+ se puede encontrar el la referencia 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Chikazumi"
+literal "true"
+
+\end_inset
+
+.
+ Nosotros utilizaremos la de 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Aharoni2001"
+literal "true"
+
+\end_inset
+
+, la cual es más geométrica, y los detalles los dejamos para el Apéndice
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Energía-de-Intercambio"
+
+\end_inset
+
+.
+ Este análisis será necesario también, cuando queramos deducir expresiones
+ micromagnéticas para el intercambio asimétrico (Interacciones de Dzyaloshinskii
+-Moriya), ya que el procedimiento es similar.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/exchange-spins.pdf
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De la regla del coseno, podemos ver que
+\begin_inset Formula 
+\[
+\phi_{ij}\simeq\left|\hat{s}_{i}-\hat{s}_{j}\right|.
+\]
+
+\end_inset
+
+Entonces, recordando que la suma en 
+\begin_inset Formula $j$
+\end_inset
+
+ es a vecinos cercanos, 
+\begin_inset Formula $\mathbf{S}_{j}$
+\end_inset
+
+ representarán los espines desplazados en el arreglo del cristal, en una
+ cantidad vectorial 
+\begin_inset Formula $\boldsymbol{\epsilon}_{j}$
+\end_inset
+
+ respecto a la posición del espín 
+\begin_inset Formula $\mathbf{S}_{i}$
+\end_inset
+
+, con 
+\begin_inset Formula $\left|\boldsymbol{\epsilon}_{j}\right|\ll1$
+\end_inset
+
+.
+ Así, denotando 
+\begin_inset Formula $\hat{s}_{i}=\hat{s}(\mathbf{x}_{i})$
+\end_inset
+
+, obtenemos
+\begin_inset Formula 
+\[
+\hat{s}_{j}=\hat{s}\left(\mathbf{x}_{i}+\boldsymbol{\epsilon}_{j}\right)\approx\hat{s}(\mathbf{x}_{i})+\left(\boldsymbol{\epsilon}_{j}\cdot\boldsymbol{\nabla}\right)\hat{s}(\mathbf{x}_{i}).
+\]
+
+\end_inset
+
+Luego
+\begin_inset Formula 
+\[
+\left|\hat{s}_{i}-\hat{s}_{j}\right|^{2}=\left(\boldsymbol{\epsilon}_{j}\cdot\boldsymbol{\nabla}\hat{s}_{i}\right)^{2},
+\]
+
+\end_inset
+
+por lo que
+\begin_inset Formula 
+\[
+\mathcal{H}_{\text{ex}}=-\frac{S^{2}J}{2}\sum_{i}\underset{\text{vecinos}}{\sum_{j}}\left(\boldsymbol{\epsilon}_{j}\cdot\boldsymbol{\nabla}\hat{s}_{i}\right)^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora, relacionando 
+\begin_inset Formula $\hat{s}_{i}$
+\end_inset
+
+ como la dirección del momento magnético 
+\begin_inset Formula $\mathbf{M}_{i}/\left|\mathbf{M}_{i}\right|$
+\end_inset
+
+, realizando la suma a primeros vecinos en la red correspondiente, contando
+ el número efectivo de átomos por sitio 
+\begin_inset Formula $c$
+\end_inset
+
+ y tomando el límite al continuo (ver Apéndice 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Energía-de-Intercambio"
+
+\end_inset
+
+), podemos deducir una expresión para el hamiltoniano o energía de intercambio
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E_{\text{ex}}\text{=}\frac{A}{M_{s}^{2}}\int_{V}\left\{ \left(\boldsymbol{\nabla}M_{x}\right)^{2}+\left(\boldsymbol{\nabla}M_{y}\right)^{2}+\left(\boldsymbol{\nabla}M_{z}\right)^{2}\right\} dV,
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $A=JS^{2}c/a$
+\end_inset
+
+ es la constante de intercambio del material, 
+\begin_inset Formula $c$
+\end_inset
+
+ depende de la geometría de la red y 
+\begin_inset Formula $a$
+\end_inset
+
+ es la longitud de una celda unitaria.
+\end_layout
+
+\begin_layout Subsection
+Energía Dipolar
+\end_layout
+
+\begin_layout Standard
+También conocida como energía magnetostática o demagnetizante, viene de
+ la interacción directa entre momentos dipolares.
+ Esta interacción, a diferencia de la de intercambio, es de largo alcance,
+ pero es mucho menor en magnitud, por lo que es apreciable generalmente
+ en sistemas de mayor dimensión.
+ Su expresión discreta es 
+\begin_inset Formula 
+\[
+E_{\text{dip}}=-\frac{1}{2}\sum_{i\neq j}\boldsymbol{\mu}_{i}\cdot\mathbf{h}_{i}
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $\boldsymbol{\mu}_{i}=\tilde{g}\mu_{B}\mathbf{S}_{i}$
+\end_inset
+
+ es un dipolo magnético en un sitio 
+\begin_inset Formula $i$
+\end_inset
+
+ de un arreglo y 
+\begin_inset Formula $\mathbf{h}_{i}$
+\end_inset
+
+ se refiere al campo debido a todos los demás en el sitio 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ La suma es sobre todos los sitios del sistema.
+ Es posible a partir de esta expresión, llevarla al límite micromagnético
+ considerando una esfera físicamente pequeña
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Que sea menor a la constante a la 
+\emph on
+longitud de exchange
+\emph default
+, que es la longitud a la que 
+\begin_inset Formula $\mathbf{M}$
+\end_inset
+
+ tiende a cambiar, y los suficientemente grande para que sea mayor a la
+ longitud de una celda unitaria (o constante de la red) del material.
+\end_layout
+
+\end_inset
+
+ en el sitio 
+\begin_inset Formula $i$
+\end_inset
+
+ en torno a un dipolo, de manera que dentro de ésta, debido a la fuerte
+ interacción de intercambio, los momentos se consideren como constantes
+ y fuera de esta esfera, se toman los momentos como la distribución macroscópica
+ 
+\begin_inset Formula $\mathbf{M}(\mathbf{r})$
+\end_inset
+
+.
+ Entonces, el campo 
+\begin_inset Formula $\mathbf{h}_{i}$
+\end_inset
+
+ se puede escribir como
+\begin_inset Formula 
+\[
+\mathbf{h}_{i}=\mathbf{H}'-\left(-\frac{4\pi}{3}\mathbf{M}\right)+\textbf{h}_{i}'
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $\mathbf{H}'$
+\end_inset
+
+ es el campo fuera de la esfera y 
+\begin_inset Formula $\textbf{h}_{i}'=\sum_{j}\left\{ \frac{1}{r_{ij}^{3}}\left(3\frac{\textbf{r}_{ij}(\textbf{r}_{ij}\cdot\boldsymbol{\mu}_{j})}{r_{ij}^{2}}-\boldsymbol{\mu}_{j}\right)\right\} $
+\end_inset
+
+ es la expresión discreta del campo dipolar dentro de la esfera.
+ Con la aproximación, esta última suma se anula 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Aharoni2001"
+literal "true"
+
+\end_inset
+
+ y el término con 
+\begin_inset Formula $\mathbf{M}$
+\end_inset
+
+ no lo consideramos por ser una constante, de forma que nos queda la expresión
+ conocida para la energía magnetostática
+\begin_inset Formula 
+\begin{equation}
+E_{\text{dip}}=-\frac{1}{2}\int_{V}\mathbf{M}(\mathbf{r})\cdot\mathbf{H}'(\mathbf{r})\,dV.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El campo 
+\begin_inset Formula $\mathbf{H}'$
+\end_inset
+
+ es posible calcularlo a través de las ecuaciones de Maxwell, y podemos
+ encontrarlo mediante un potencial 
+\begin_inset Formula $U$
+\end_inset
+
+, tal que 
+\begin_inset Formula $\mathbf{H}'\text{=-\boldsymbol{\nabla}U}$
+\end_inset
+
+.
+ Hay dos caminos posibles para obtener 
+\begin_inset Formula $U$
+\end_inset
+
+: resolver una ecuación de Poisson con condiciones de borde 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Aharoni2001"
+literal "true"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\nabla^{2}U=4\pi\boldsymbol{\nabla}\cdot\mathbf{M},
+\]
+
+\end_inset
+
+ o integrar directamente la expresión
+\begin_inset Formula 
+\[
+U=-\left\{ \int_{V}\frac{\boldsymbol{\nabla}'\cdot\mathbf{M}(\mathbf{r}')}{|\mathbf{r}-\mathbf{r}'|}dV'-\int_{S}\frac{\hat{n}\cdot\mathbf{M}(\mathbf{r}')}{|\mathbf{r}-\mathbf{r}'|}dS'\right\} ,
+\]
+
+\end_inset
+
+en que las integrales van sobre el sistema magnético y 
+\begin_inset Formula $\hat{n}$
+\end_inset
+
+ es normal a las superficies correspondientes.
+\end_layout
+
+\begin_layout Standard
+Es importante señalar que en el caso de que la magnetización sea constante,
+ es posible escribir
+\begin_inset Formula 
+\[
+\mathbf{H}'=-4\pi\widetilde{N}\cdot\mathbf{M}
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $\widetilde{N}$
+\end_inset
+
+ se conoce como tensor demagnetizante y, si los ejes de un elipsoide a considera
+r, coinciden con los ejes de referencia, se cumple que 
+\begin_inset Formula $\text{Tr}[\widetilde{N}]=1$
+\end_inset
+
+.
+ De esta forma se puede escribir, con 
+\begin_inset Formula $V$
+\end_inset
+
+ como el volumen del sistema, 
+\begin_inset Formula 
+\[
+E_{\text{dip}}=2\pi V\left(N_{x}M_{x}^{2}+N_{y}M_{y}^{2}+N_{z}M_{z}^{2}\right)\qquad\qquad N_{x}+N_{y}+N_{z}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Energía de Anisotropía
+\end_layout
+
+\begin_layout Standard
+Si uno observa el hamiltoniano de Heisenberg, se puede ver que es isotrópico,
+ es decir, los espines tienden a alinearse paralelamente, pero no hay una
+ dirección específica en que deban hacerlo.
+ Entonces, de acuerdo a evidencias experimentales, se planteó un nuevo término
+ de energía, conocida como energía de anisotropía, que explica la tendencia
+ de los sistemas magnéticos a tener direcciones preferenciales (llamadas
+ ejes de anisotropía) para las cuales la magnetización 
+\begin_inset Formula $\mathbf{M}$
+\end_inset
+
+ tiende a alinearse, ya que se han observado ciertos sistemas que quedan
+ magnetizados en determinadas orientaciones aún en ausencia de campo magnético.
+ 
+\end_layout
+
+\begin_layout Standard
+Hay distintas formas de anisotropías, la más común se conoce como 
+\emph on
+anisotropía magnetocristalina
+\emph default
+ y tiene su origen en el acoplamiento espín-órbita.
+ Su forma depende de la geometría cristalográfica del material y la expresión
+ matemática puede ser deducida a través de una expansión de la energía libre
+ del sistema considerando determinadas operaciones de simetría 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lindner2008"
+literal "true"
+
+\end_inset
+
+.
+ Las anisotropías más frecuentes de este tipo son las 
+\emph on
+uniaxiales
+\emph default
+ y las 
+\emph on
+cúbicas
+\emph default
+.
+ A lo largo de este trabajo solo consideraremos anisotropías uniaxiales
+ , que se leen
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E_{\text{u}}=-\frac{K_{\text{u}}}{M_{s}}\int_{V}(\mathbf{M}\cdot\hat{u})^{2}\,dV,
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $\hat{u}$
+\end_inset
+
+ es un vector unitario que indica la dirección del eje de anisotropía y
+ 
+\begin_inset Formula $K_{\text{u}}$
+\end_inset
+
+ es la constante de anisotropía, la cual se obtiene de datos experimentales,
+ ya que el cálculo de primeros principios no han dado resultados muy certeros.
+ Notar acá que si 
+\begin_inset Formula $K_{\text{u}}>0$
+\end_inset
+
+, el sistema favorece el hecho de estar alineado a lo largo del eje de anisotrop
+ía, por lo que en este caso se conoce como 
+\emph on
+eje fácil
+\emph default
+ (
+\emph on
+easy-axis
+\emph default
+).
+ En cambio, si la constante es negativa, para minimizar la energía, el sistema
+ se tiende a magnetizar en dirección perpendicular a este eje, y se tendría
+ un 
+\emph on
+plano fácil
+\emph default
+ (
+\emph on
+easy-plane
+\emph default
+) de simetría, de forma que el eje se conocería como 
+\emph on
+eje difícil
+\emph default
+ de anisotropía o 
+\emph on
+hard-axis
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Otra forma de anisotropía, es la 
+\emph on
+anisotropía de forma
+\emph default
+, que viene de las interacciones dipolares y es básicamente la expresión
+ que se describió para 
+\begin_inset Formula $\mathbf{M}$
+\end_inset
+
+ constante en la energía magnetostática.
+ Este nombre es a causa de la dependencia con la forma del material, lo
+ cual está considerado en el tensor demagnetizante, y su expresión es similar
+ a una anisotropía uniaxial..
+\end_layout
+
+\begin_layout Standard
+También podemos encontrar 
+\emph on
+anisotropías de superficie
+\emph default
+, cuya expresión es análoga a la uniaxial.
+ Menos usuales son las 
+\emph on
+anisotropías magnetoeslásticas,
+\emph default
+ inducidas por la aplicación de estrés sobre el sistema, o efectos como
+ la 
+\emph on
+magnetostricción
+\emph default
+.
+\end_layout
+
+\begin_layout Subsection
+Energía de Zeeman
+\end_layout
+
+\begin_layout Standard
+Esta se origina de la energía potencial de los momentos magnéticos de un
+ cuerpo en presencia de un campo magnético externo.
+ Entonces, si tenemos un campo 
+\begin_inset Formula $\mathbf{H}_{\text{e}}$
+\end_inset
+
+ aplicado al sistema, la energía de Zeeman tiene la expresión en el continuo
+\begin_inset Formula 
+\begin{equation}
+E_{\text{Z}}=-\int_{V}\mathbf{M}(\mathbf{x})\cdot\mathbf{H}_{\text{e}}\,dV.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Interacciones de Dzyaloshinskii-Moriya
+\end_layout
+
+\begin_layout Standard
+En los últimos años, diversos estudios experimentales han comprobado la
+ existencia de 
+\emph on
+interacciones asimétricas
+\emph default
+ entre los átomos magnéticos de ciertos materiales, a diferencia del intercambio
+ simétrico que explicamos anteriormente.
+ Este fenómeno, ya había sido propuesto hace 50 años por Dzyaloshinskii
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Dzyaloshinskii,Dzyaloshinskii1958"
+literal "true"
+
+\end_inset
+
+, para explicar el ferromagnetismo débil; y desarrollado teóricamente por
+ Moriya 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Moriya1960"
+literal "true"
+
+\end_inset
+
+, realizando correcciones de espín-órbita relativistas al hamiltoniano de
+ estos sistemas.
+ Estas nuevas interacciones de intercambio entre espines, conocidas como
+ las 
+\emph on
+interacciones de Dzyaloshinskii-Moriya
+\emph default
+ (IDM), en principio se presentan en materiales antiferromagnéticos, pero
+ también surgen en cristales de geometría no-centrosimétrica (como el MnSi,
+ clasificado como helimagneto) o en láminas muy delgadas, de unas pocas
+ monocapas 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Udvardi2008,Udvardi2009,Costa2010"
+literal "true"
+
+\end_inset
+
+, debido a la ausencia de simetría de inversión en la superficie o interfaz
+ (estudios recientes se han realizado en sistemas de una o dos monocapas
+ de Fe/W(110) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Udvardi2009,Costa2010"
+literal "true"
+
+\end_inset
+
+).
+ Además de adicionar un término de energía extra al sistema, las interacciones
+ de DM dan origen a nuevos fenómenos, como la estabilización de estructuras
+ quirales (helicoidales) o asimetrías en el espectro de ondas de espín del
+ material.
+ Este último efecto será el que discutiremos en el próximo capítulo.
+\end_layout
+
+\begin_layout Standard
+Es posible tratar este fenómeno de forma discreta, donde el hamiltoniano
+ se expresa de la forma 
+\begin_inset Formula 
+\[
+\mathcal{H}_{\text{DM}}=\sum_{i,j}\mathbf{D}_{ij}\cdot\mathbf{S}_{i}\times\mathbf{S}_{j},
+\]
+
+\end_inset
+
+en que la suma en 
+\begin_inset Formula $j$
+\end_inset
+
+, así como en el caso del intercambio, se realiza a primeros vecinos.
+ Expresiones para el vector de Dzyaloshinskii 
+\begin_inset Formula $\mathbf{D}_{ij}$
+\end_inset
+
+ en determinadas geometrías, se pueden encontrar en la referencia 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Crepieux1998"
+literal "true"
+
+\end_inset
+
+, donde hay un tratamiento detallado, y su efecto es el de rotar ligeramente
+ los espines en un pequeño ángulo.
+ Pero nosotros estamos interesados en el límite micromagnético, por lo que
+ requerimos de un método en el continuo.
+ En este caso, la energía de DM es posible escribirla como 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Dzyaloshinskii,Dzyaloshinskii1958,Bogdanov1989"
+literal "true"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+E_{\text{DM}}=\int_{V}w_{\text{DM}}\,dV,
+\end{equation}
+
+\end_inset
+
+en que 
+\begin_inset Formula $w_{\text{DM}}$
+\end_inset
+
+ es una suma de términos conocidos como 
+\emph on
+Invariantes de Lifshitz 
+\emph default
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bogdanov1989,Leonov2012"
+literal "true"
+
+\end_inset
+
+ 
+\begin_inset Formula $\mathcal{L}_{ij}^{(k)}$
+\end_inset
+
+,
+\emph on
+ 
+\emph default
+que son expresiones lineales en la primera derivada espacial de la magnetización
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+La invarianza es respecto a las operaciones de simetría del grupo puntual
+ que se esté analizando 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bak1980,Landau1980"
+literal "true"
+
+\end_inset
+
+.
+ Una idea teórica puede encontrarse en las referencias 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Landau1980,2011"
+literal "true"
+
+\end_inset
+
+, donde se realiza un estudio de la energía de cristales líquidos, bajo
+ consideraciones de simetrías.
+ En este caso, se buscan invariantes al expandir la energía libre en término
+ de combinaciones de escalares de una cantidad relevante, de la cual depende
+ la energía.
+\end_layout
+
+\end_inset
+
+, es decir
+\begin_inset Formula 
+\[
+\mathcal{L}_{ij}^{(k)}=M_{i}\left(\frac{\partial M_{j}}{\partial x_{k}}\right)-M_{j}\left(\frac{\partial M_{i}}{\partial x_{k}}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las formas funcionales de 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+ y, por lo tanto, de la energía, están determinadas por la geometría cristalográ
+fica de los materiales en consideración, los cuales son no-centrosimétricos
+ o carecen de alguna simetría; y serán una combinación de estos invariantes,
+ los cuales irán multiplicados por algún coeficiente constante que depende
+ del material.
+ Una de las sumas de invariantes más estudiadas recientemente, es la de
+ sistemas con la clase de simetría (o grupo puntual) 
+\begin_inset Formula $T$
+\end_inset
+
+, y es posible escribirla en término de expresiones usuales
+\begin_inset Formula 
+\[
+\mathcal{L}=\left(\mathcal{L}_{yx}^{(z)}+\mathcal{L}_{xz}^{(y)}+\mathcal{L}_{zy}^{(x)}\right)=\mathbf{M}\cdot(\nabla\times\mathbf{M}).
+\]
+
+\end_inset
+
+De acuerdo a esto, la expresión de la densidad de energía es 
+\begin_inset Formula $w_{\text{DM}}=\lambda_{\text{DM}}\mathcal{L}$
+\end_inset
+
+, donde 
+\begin_inset Formula $\lambda_{\text{DM}}$
+\end_inset
+
+ es la constante propia del material y tiene unidades de longitud.
+ La estructura de 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+ para otras geometrías, reportadas en la literatura y que podrían tener
+ más de una constante, las resumimos en la Tabla 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Invariantes"
+
+\end_inset
+
+, en términos de la clase del cristal o grupo puntual.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Tabla1.pdf
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Invariantes de Lifshitz para diferentes grupos puntuales.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Invariantes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ondas de espín
+\end_layout
+
+\begin_layout Standard
+Las ondas de espín se definen como excitaciones colectivas o elementales
+ de un magneto que se encuentra ordenado, o como perturbaciones de los espines
+ de un material magnético ordenado, que se propagan en cierta dirección.
+ Del punto de vista de cuasi-partículas, las ondas de espín corresponden
+ a 
+\emph on
+magnones
+\emph default
+, los cuales son modos bosónicos con cuantos de energía definidos.
+\end_layout
+
+\begin_layout Standard
+En el límite micromagnético, la representación matemática de las ondas de
+ espín es la misma que la de las ondas regulares, así que las caracterizamos
+ mediante un vector de onda 
+\begin_inset Formula $\mathbf{k}$
+\end_inset
+
+ (asociada a una longitud de onda 
+\begin_inset Formula $\lambda$
+\end_inset
+
+) y una frecuencia propia 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ del modo excitado.
+\end_layout
+
+\begin_layout Standard
+Para ilustrar este fenómeno, graficamos debajo una cadena de espines en
+ un ferromagneto, las cuales forman una onda de espín al ser perturbados
+ del estado fundamental.
+ En esta representación semiclásica, se puede ver la onda de espín como
+ una excitación en que la fase de precesión varía linealmente de sitio a
+ sitio 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Stancil2009"
+literal "true"
+
+\end_inset
+
+.
+ 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Spin-wave.pdf
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Representación de una onda de espín en un ferromagneto, la cual se caracteriza
+ con una longitud de onda 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:spin-wave"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hay diversas formas de describir teóricamente las ondas de espín en un sistema
+ ferromagnético.
+ Por ejemplo, existe el formalismo de Holstein-Primakoff donde, a través
+ de un tratamiento mecánico cuántico, se representa a los operadores de
+ espín en términos de los operadores de subida y bajada de un oscilador
+ armónico, los que a su vez describen operadores bosónicos de creación y
+ aniquilación.
+ 
+\end_layout
+
+\begin_layout Standard
+Nuestra forma de abordar este problema 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "David2013"
+literal "true"
+
+\end_inset
+
+, se encuentra en el límite micromagnético, por lo que haremos uso de la
+ teoría macroscópica, considerando la magnetización como un campo 
+\begin_inset Formula $\mathbf{M}(\mathbf{x})$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kittel1987"
+literal "true"
+
+\end_inset
+
+ y transformándola al espacio de fourier para obtener 
+\begin_inset Formula $\mathbf{M}(\mathbf{k})$
+\end_inset
+
+; esto, con la restricción de que 
+\begin_inset Formula $ka\ll1$
+\end_inset
+
+ (
+\begin_inset Formula $a$
+\end_inset
+
+ como la constante de red bajo consideración).
+ Luego, estos vectores clásicos se promueven a operadores, utilizando el
+ formalismo de Holstein-Primakoff, y se obtienen reglas de conmutación para
+ los operadores de magnetización 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Mills2006Quantum"
+literal "true"
+
+\end_inset
+
+.
+ A partir de acá, es posible deducir la dinámica de los espines a través
+ de la ecuación de movimiento de los operadores (ecuación de Heisenberg)
+ y encontrar las frecuencias propias de los modos de ondas de espín.
+ Para ello, es necesario conocer el Hamiltoniano del sistema y expandirlo
+ hasta segundo orden en término de las componentes de la magnetización dinámica
+ (que resulta de la perturbación externa al sistema, más detalles se describirán
+ a lo largo del trabajo), lo cual es similar a linealizar la ecuación de
+ Landau-Lifshitz-Gilbert (ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Landau-Lifshitz-Gilbert"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Es importante señalar que la frecuencia de las ondas de espín dependerá
+ del campo efectivo 
+\begin_inset Formula $\mathbf{H}_{\text{eff}}$
+\end_inset
+
+ actuando en el sistema.
+ Cuando estamos en un rango de vectores de onda pequeños, o longitudes de
+ onda muy grandes, la interacción que domina en el sistema es la dipolar,
+ lo que puede explicarse con el hecho de que el desfase entre espines será
+ muy pequeño y la interacción de intercambio será casi nula.
+ En cambio, a medida que las longitudes de onda son cada vez más pequeñas
+ (vectores de onda grandes), el desfase entre vecinos es considerable y
+ la interacción de intercambio ya no se puede despreciar.
+\end_layout
+
+\begin_layout Section
+Resonancia Ferromagnética (FMR)
+\end_layout
+
+\begin_layout Standard
+Resonancia Ferromagnética (Ferromagnetic Resonance) es una técnica de espectrosc
+opía que se utiliza para medir propiedades magnéticas (como anchos de línea,
+ constantes de anisotropía, constantes de damping, etc.) a través del análisis
+ del movimiento precesional de los espines en muestras ferromagnéticas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/FMR-system.pdf
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de los campos involucrados en la técnica de resonancia ferromagnética,
+ los cuales inducen el movimiento precesional de la magnetización del sistema.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:FMR"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En esta técnica, un campo magnético constante es aplicado a un sistema ferromagn
+ético, lo suficientemente fuerte como para saturarlo, y luego se inyecta
+ un pequeño campo de microondas o de radiofrecuencia, por lo que los momentos
+ magnéticos comenzarán a precesar coherentemente en torno a su posición
+ de equilibrio con la misma frecuencia y fase.
+ La 
+\emph on
+resonancia
+\emph default
+ ocurrirá cuando la frecuencia del campo magnético alternante, el cual se
+ aplica transversal a la magnetización del sistema, es igual a frecuencia
+ de precesión de los espines.
+ La frecuencia de este modo uniforme se denomina frecuencia de resonancia
+ ferromagnética (ferromagnetic resonance frequency) y puede considerarse
+ como una onda de espín con longitud de onda infinita o vector de onda nulo
+ (
+\begin_inset Formula $\mathbf{k}=0$
+\end_inset
+
+).
+ En este caso, todos los espínes son paralelos y la contribución de la energía
+ de intercambio es cero.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+section[Susceptibilidad y Frecuencia de Resonancia de un Elipsoide]{Susceptibili
+dad y Frecuencia de Resonancia de un Elipsoide Ferromagnético}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Susceptibilidad-y-Frecuencia-elipsoide"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para ilustrar el fenómeno de resonancia y la descripción de ondas de espín
+ en el modo con 
+\begin_inset Formula $\mathbf{k=0}$
+\end_inset
+
+, presentamos un ejemplo sencillo, el cual consiste en un elipsoide ferromagnéti
+co saturado con un campo magnético y llevado al desequilibrio bajo un campo
+ de microondas.
+ El problema se abordará a través de la ecuación de LLG en la aproximación
+ de macroespín, es decir, consideramos todos los momentos girando con la
+ misma frecuencia y fase.
+\end_layout
+
+\begin_layout Standard
+En el régimen de FMR, la energía de intercambio es constante, por lo que
+ el campo asociado es nulo y, por simplificación, no consideraremos anisotropía.
+ Por lo tanto, en equilibrio, el campo efectivo será
+\begin_inset Formula 
+\[
+\mathbf{H}=\mathbf{H}_{0}=\mathbf{H}_{\text{e}0}-\widetilde{N}\cdot\mathbf{M},
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $\mathbf{H}_{\text{e}0}$
+\end_inset
+
+ es un campo magnético externo, que lo consideraremos en la dirección 
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+ y lo suficientemente fuerte como para saturar el sistema, por lo que 
+\begin_inset Formula $\mathbf{M}=\mathbf{M}_{0}=M_{s}\hat{z}$
+\end_inset
+
+ (
+\begin_inset Formula $M_{s}$
+\end_inset
+
+ como la magnetización de saturación), y 
+\begin_inset Formula $\widetilde{N}$
+\end_inset
+
+ es el tensor demagnetizante, el cual es simétrico.
+ 
+\end_layout
+
+\begin_layout Standard
+Para analizar la frecuencia de resonancia, llevamos al sistema al desequilibrio
+ bajo un pequeño campo magnético alterno y transversal 
+\begin_inset Formula $\mathbf{h}_{\text{e}}(\mathbf{r};t)$
+\end_inset
+
+ (campo de microondas), de forma que debemos hacer 
+\begin_inset Formula $\mathbf{H}\longrightarrow\mathbf{H}_{\text{e}0}+\mathbf{h}_{\text{e}}(t)$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{M}\longrightarrow\mathbf{M}_{0}+\mathbf{m}(t)$
+\end_inset
+
+.
+ Así, podemos escribir
+\begin_inset Formula 
+\[
+\mathbf{H}=\mathbf{H}_{0}+\mathbf{h}(t)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathbf{M}=\mathbf{M}_{0}+\mathbf{m}(t)
+\]
+
+\end_inset
+
+con 
+\begin_inset Formula $\mathbf{H}_{0}=\mathbf{H}_{\text{e}0}-\widetilde{N}\cdot\mathbf{M}_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbf{h}=\mathbf{h}_{\text{e}}-\widetilde{N}\cdot\mathbf{m}$
+\end_inset
+
+ (válido sólo para oscilaciones uniformes de la magnetización dinámica 
+\begin_inset Formula $\mathbf{m}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gurevich1996"
+literal "true"
+
+\end_inset
+
+), 
+\begin_inset Formula $\left|\mathbf{h}_{\text{e}}\right|\ll\left|\mathbf{H}_{\text{e}0}\right|$
+\end_inset
+
+ y 
+\begin_inset Formula $\left|\mathbf{m}\right|\ll\left|\mathbf{M}_{0}\right|$
+\end_inset
+
+ (al ser 
+\begin_inset Formula $\mathbf{h}_{\text{e}}$
+\end_inset
+
+ transversal, éste y 
+\begin_inset Formula $\mathbf{m}$
+\end_inset
+
+ sólo llevan componentes en 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ e 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+).
+ Ahora reemplazamos en la ecuación de LLG (ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Landau-Lifshitz-Gilbert"
+
+\end_inset
+
+, los detalles de los cálculos se encuentran en el Apéndice 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Frecuencia-de-resonancia-elipsoide"
+
+\end_inset
+
+) para linealizarla, descartamos los términos de segundo orden en 
+\begin_inset Formula $\mathbf{m}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{h}$
+\end_inset
+
+ y, como 
+\begin_inset Formula $|\mathbf{m}|$
+\end_inset
+
+ es pequeño, aproximamos 
+\begin_inset Formula $\left|\mathbf{M}_{0}\right|=M_{0}\approx M_{s}$
+\end_inset
+
+ (términos de orden 
+\begin_inset Formula $\mathcal{O}(\mathbf{m}^{2})$
+\end_inset
+
+ se descartan ya que sólo queremos los que son lineales en 
+\begin_inset Formula $\mathbf{m}$
+\end_inset
+
+).
+ Luego, 
+\begin_inset Formula 
+\[
+\frac{\partial\mathbf{m}}{\partial t}=-\gamma\mathbf{M}_{0}\times\mathbf{h}-\gamma\mathbf{m}\times\mathbf{H}_{\text{e}0}+\gamma\mathbf{m}\times\widetilde{N}\cdot\mathbf{M}_{0}+\frac{\alpha}{M_{s}}\mathbf{M}_{0}\times\frac{\partial\mathbf{m}}{\partial t}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como consideramos un campo oscilante, las componentes dinámicas tendrán
+ una dependencia armónica: 
+\begin_inset Formula $\mathbf{m}(t)=\mathbf{m}e^{-i\omega t}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{h}(t)=\mathbf{h}e^{-i\omega t}$
+\end_inset
+
+.
+ Además, recordando que 
+\begin_inset Formula $\mathbf{H}_{\text{e}0}=H_{\text{e}0}\hat{z}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{M}_{0}=M_{s}\hat{z}$
+\end_inset
+
+, llegamos a dos ecuaciones, las cuales podemos escribir en forma matricial
+\begin_inset Formula 
+\[
+\begin{pmatrix}\omega_{x}+ig\omega & i\omega-\omega_{s}\\
+-i\omega-\omega_{s} & \omega_{y}+ig\omega
+\end{pmatrix}\begin{pmatrix}m_{x}\\
+m_{y}
+\end{pmatrix}=\gamma M_{s}\begin{pmatrix}h_{\text{e}x}\\
+h_{\text{e}y}
+\end{pmatrix}.
+\]
+
+\end_inset
+
+Aquí, 
+\begin_inset Formula $\omega_{s}=-\gamma M_{s}N_{xy}$
+\end_inset
+
+ (
+\begin_inset Formula $\widetilde{N}$
+\end_inset
+
+ es simétrica, entonces 
+\begin_inset Formula $N_{xy}=N_{yx}$
+\end_inset
+
+), 
+\begin_inset Formula $\omega_{x,y}=\omega_{H}-\gamma M_{s}N_{z}+\gamma M_{s}N_{x,y}$
+\end_inset
+
+ y 
+\begin_inset Formula $\omega_{H}=\gamma H_{\text{e}0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+La estructura de la ecuación anterior es de la forma 
+\begin_inset Formula $\widetilde{\chi}^{-1}\cdot\mathbf{m}=\gamma M_{s}\mathbf{h}$
+\end_inset
+
+.
+ Nos interesa encontrar el tensor de susceptibilidad dinámica 
+\begin_inset Formula $\widetilde{\chi}$
+\end_inset
+
+ (la respuesta del sistema frente a un campo externo), de forma que, al
+ invertir la matriz correspondiente, nos queda, normalizando
+\begin_inset Formula 
+\[
+\widetilde{\chi}=\frac{\left[\omega_{0}^{2}-\omega^{2}+ig\omega(\omega_{x}+\omega_{y})\right]}{\left(\omega_{0}^{2}-\omega^{2}\right)^{2}+g^{2}\omega^{2}(\omega_{x}+\omega_{y})^{2}}\begin{pmatrix}\omega_{y}-ig\omega & \omega_{s}-i\omega\\
+\omega_{s}+i\omega & \omega_{x}-ig\omega
+\end{pmatrix},
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $\omega_{0}=\omega_{x}\omega_{y}-\omega_{s}^{2}$
+\end_inset
+
+.
+ Es directo entonces, obtener una de las componentes diagonales 
+\begin_inset Formula 
+\[
+\chi_{xx}=\frac{\left[\left(\omega_{0}^{2}-\omega^{2}\right)\omega_{y}+g^{2}\omega^{2}(\omega_{x}+\omega_{y})\right]-ig\omega\left[\left(\omega_{0}^{2}-\omega^{2}\right)-\omega_{y}(\omega_{x}+\omega_{y})\right]}{\left(\omega_{0}^{2}-\omega^{2}\right)^{2}+g^{2}\omega^{2}(\omega_{x}+\omega_{y})^{2}},
+\]
+
+\end_inset
+
+cuya parte imaginaria 
+\begin_inset Formula $\Im\left[\chi_{xx}\right]$
+\end_inset
+
+, es la que se adquiere usualmente en forma experimental y representa la
+ absorción del sistema.
+ Es posible analizar esta función barriendo el campo externo o la frecuencia.
+ Generalmente, en forma experimental, se realiza la primera, ya que es más
+ fácil fijar una frecuencia que ir variándola.
+ Gráficamente, 
+\begin_inset Formula $\Im\left[\chi_{xx}\right]$
+\end_inset
+
+ como función del campo, tiene la estructura de una curva lorentziana, lo
+ cual se ilustra en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ImXxx"
+
+\end_inset
+
+.
+ El punto donde la absorción es máxima 
+\begin_inset Formula $\Im[\chi_{xx}]_{\text{res}}$
+\end_inset
+
+, es donde ocurre Resonancia Ferromagnética, y se conoce como campo resonante.
+ Además, mostramos el 
+\emph on
+ancho de línea
+\emph default
+ 
+\begin_inset Formula $\Delta H$
+\end_inset
+
+, que se define como la diferencia de campo entre los puntos donde 
+\begin_inset Formula $\Im[\chi_{xx}]=\Im[\chi_{xx}]_{\text{res}}/2$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/ImXxx.pdf
+	scale 95
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica del espectro de absorción de una esfera ferromagnética de Fe, en
+ función del campo externo.
+ El espectro está dado por la parte imaginaria de la componente diagonal
+ 
+\begin_inset Formula $\chi_{xx}$
+\end_inset
+
+ de la susceptibilidad (línea continua), junto con su respectiva derivada
+ respecto al campo externo (línea cortada), donde se puede apreciar en forma
+ más precisa el punto donde ocurre la resonancia, el cual se sitúa en 
+\begin_inset Formula $H_{\text{e}0}=536.21$
+\end_inset
+
+ Oe.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ImXxx"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+También, de la susceptibilidad, podemos obtener la frecuencia de resonancia,
+ donde la absorción del sistema es máxima
+\begin_inset Formula 
+\[
+\omega^{2}=\omega_{0}^{2}=\omega_{x}\omega_{y}-\omega_{s}^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un caso simple ocurre cuando los ejes del sistema coinciden con los ejes
+ de simetría del material, de manera que el tensor demagnetizante 
+\begin_inset Formula $\widetilde{N}$
+\end_inset
+
+ es diagonal, o sea 
+\begin_inset Formula $N_{xy}=0$
+\end_inset
+
+.
+ En este contexto, la expresión para la frecuencia de resonancia será
+\begin_inset Formula 
+\[
+\omega^{2}=\gamma\left[H_{\text{e}0}+M_{s}(N_{x}-N_{z})\right]\left[H_{\text{e}0}+M_{s}(N_{y}-N_{z})\right],
+\]
+
+\end_inset
+
+y es la reconocida Fórmula de Kittel 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kittel1948"
+literal "true"
+
+\end_inset
+
+.
+ Podemos notar que acá no existe una dependencia en el vector de onda 
+\begin_inset Formula $\mathbf{k}$
+\end_inset
+
+, ya que no entra en juego el campo efectivo de la interacción de intercambio
+ y hemos tomado en cuenta el caso con vector de onda nulo (FMR).
+ Tampoco hay una dependencia en los campos creados por la magnetización
+ dinámica 
+\begin_inset Formula $\mathbf{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Si quisiéramos estudiar ondas de espín con vectores de onda distintos de
+ cero, ya no podemos negar el campo de intercambio porque habrá un desfase
+ entre los espines vecinos y la magnetización dinámica ahora tendrá una
+ dependencia espacial.
+ Este caso no lo desarrollaré, pero la idea es expresar la magnetización
+ dinámica como una suma de ondas planas, es decir,
+\begin_inset Formula 
+\[
+\mathbf{m}(\mathbf{r};t)=\sum_{\mathbf{k}}\mathbf{m}(\mathbf{k};t)e^{i\mathbf{k}\cdot\mathbf{r}}
+\]
+
+\end_inset
+
+y el campo efectivo ahora tendrá una componente extra debido a esta interacción
+ entre vecinos, de la forma
+\begin_inset Formula 
+\[
+\mathbf{H}_{\text{ex}}\sim\nabla^{2}\mathbf{M}.
+\]
+
+\end_inset
+
+Un análisis más detallado nos revelaría que la relación de dispersión aquí
+ dependerá de un término proporcional a 
+\begin_inset Formula $k^{2}$
+\end_inset
+
+ debido a la interacción de intercambio, la cual es la que dominará para
+ vectores de onda muy grandes (o longitudes de onda pequeñas) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Stancil2009,Herring1951"
+literal "true"
+
+\end_inset
+
+.
+ En este caso, es posible obtener la fórmula de Herring-Kittel, que depende,
+ entre varios factores, de la dirección de la onda de espín respecto a los
+ ejes de referencia en el elipsoide 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Herring1951"
+literal "true"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+La inclusión de anisotropía en estos sistemas es directa, ya que basta con
+ considerar el campo efectivo de esta interacción.
+ En las próximas secciones, la idea general es, igualmente, obtener una
+ relación de dispersión, tomando en cuenta todas las interacciones.
+\end_layout
+
+\begin_layout Standard
+En el caso de incluir completamente los efectos demagnetizantes de la magnetizac
+ión dinámica, lo cual en este ejemplo sencillo no se hizo, sería posible
+ apreciar una bajada inicial de la curva (pendiente negativa) de la relación
+ de dispersión (frecuencia dependiente de 
+\begin_inset Formula $k$
+\end_inset
+
+) en el rango de vectores de onda pequeños a causa de un término lineal
+ en 
+\begin_inset Formula $\mathbf{k}$
+\end_inset
+
+, por lo que existen modos degenerados con el modo de FMR 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Arias1999,Kalinikos1986"
+literal "true"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+En los próximos desarrollos no haremos uso explícito de la ecuación de LLG
+ sino que, como mencionamos anteriormente, empezaremos los cálculos a través
+ del hamiltoniano del sistema bajo estudio, utilizando el formalismo de
+ Kubo de teoría de respuesta lineal 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Arias1999,Landeros2008,David2013"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Modelo Teórico
+\end_layout
+
+\begin_layout Standard
+Como habíamos señalado brevemente en las secciones anteriores, el formalismo
+ que utilizaremos para analizar este problema, será el hamiltoniano, es
+ decir, realizaremos los análisis directamente a través de la energía del
+ sistema.
+ Posteriormente, se realizará un tratamiento mecánico cuántico para obtener
+ la dinámica de los espines y la correspondiente relación de dispersión.
+ Además, se utilizará la teoría de respuesta lineal para analizar las susceptibi
+lidades dinámicas y con ello, el espectro de absorción de la lámina ferromagnéti
+ca 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "David2013"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Preferimos esta forma de abordar el problema porque, además de tener la
+ mayoría de las energías calculadas en las referencias 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Arias1999,Landeros2008"
+literal "true"
+
+\end_inset
+
+, la energía dipolar de la magnetización dinámica está completamente desarrollad
+a en el límite de un film delgado, y ese cálculo no es trivial.
+ De esta forma, nosotros sólo debemos agregar el término de DM correspondiente
+ al Hamiltoniano y generalizar el cálculo de los espectros de ondas de espín.
+\end_layout
+
+\begin_layout Standard
+La otra forma de analizar este sistema, es directamente a través de la ecuación
+ de LLG 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Landau-Lifshitz-Gilbert"
+
+\end_inset
+
+, con un procedimiento análogo al de la Sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Susceptibilidad-y-Frecuencia-elipsoide"
+
+\end_inset
+
+.
+ La mayor complicación surge al calcular los campos dipolares de la magnetizació
+n dinámica.
+ Esta metodología ha sido desarrollada en la referencia 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Landeros2010"
+literal "true"
+
+\end_inset
+
+, donde se estudia el rol de la transferencia de espín (a bajas densidades
+ de corriente) en la respuesta de FMR de una película ferromagnética.
+ En tal caso, se debe agregar a la ecuación de LLG el término de espín-torque
+ y luego linealizarla.
+ Estos cálculos, sin embargo, solo describen el caso de FMR, es decir, para
+ 
+\begin_inset Formula $k=0$
+\end_inset
+
+.
+ Por lo tanto, en nuestra situación, tendríamos que extender estos resultados
+ para 
+\begin_inset Formula $k\neq0$
+\end_inset
+
+ y agregar el término de campo de las IDM.
+ Este término, para la clase de simetría 
+\begin_inset Formula $T$
+\end_inset
+
+, por ejemplo, se puede derivar directamente de la densidad de energía 
+\begin_inset Formula $w_{\text{DM}}=\lambda_{\text{DM}}\mathbf{M}\cdot(\nabla\times\mathbf{M})$
+\end_inset
+
+, a través de la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:field-derivation"
+
+\end_inset
+
+, lo cual da
+\begin_inset Formula 
+\[
+\mathbf{H}^{\text{DM}}=-2\lambda_{\text{DM}}\left(\boldsymbol{\nabla}\times\mathbf{M}\right).
+\]
+
+\end_inset
+
+Luego se debe incorporar a la ecuación de LLG y linealizar con el procedimiento
+ usual, teniendo en cuenta la geometría del problema.
+ 
+\end_layout
+
+\begin_layout Subsection
+Lámina ferromagnética
+\end_layout
+
+\begin_layout Standard
+En esta sección vamos a definir en forma general el sistema que consideraremos
+ en los dos próximos capítulos y la cual es utilizada en las referencias
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Arias1999,Landeros2008"
+literal "true"
+
+\end_inset
+
+.
+ De acuerdo a la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:referencia"
+
+\end_inset
+
+, analizamos una lámina ferromagnética delgada de espesor 
+\begin_inset Formula $d$
+\end_inset
+
+ y de área 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+.
+ Utilizaremos dos sistemas de referencia: 
+\begin_inset Formula $XYZ$
+\end_inset
+
+, que está orientado según la magnetización 
+\begin_inset Formula $\mathbf{M}$
+\end_inset
+
+, y 
+\begin_inset Formula $xyz$
+\end_inset
+
+ que está fijo con el plano de la lámina.
+ El sistema se satura mediante el campo 
+\begin_inset Formula $\mathbf{H}_{0}$
+\end_inset
+
+ que forma un ángulo 
+\begin_inset Formula $\phi_{H}$
+\end_inset
+
+ con el plano de la película, por lo que
+\begin_inset Formula 
+\[
+\mathbf{H}_{0}=\hat{z}H_{0}\cos\phi_{H}+\hat{y}H_{0}\sin\phi_{H},
+\]
+
+\end_inset
+
+con 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ como la magnitud del campo.
+ Éste es lo suficientemente fuerte para que la magnetización en equilibrio
+ 
+\begin_inset Formula $\mathbf{M}_{0}$
+\end_inset
+
+ sea uniforme y se encuentre en el plano 
+\begin_inset Formula $yz$
+\end_inset
+
+ junto con el campo aplicado, formando un ángulo 
+\begin_inset Formula $\phi_{M}$
+\end_inset
+
+ con el plano del film, así
+\begin_inset Formula 
+\[
+\mathbf{M}_{0}=M_{s}\hat{Z}=\hat{z}M_{s}\cos\phi_{M}+\hat{y}M_{s}\sin\phi_{M},
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $M_{s}$
+\end_inset
+
+ es la magnetización de saturación.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/reference-2.pdf
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema de referencia
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:referencia"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El ángulo de equilibrio de la magnetización 
+\begin_inset Formula $\phi_{M}$
+\end_inset
+
+ podemos determinarlo de dos formas.
+ Una es minimizando la energía del sistema en equilibrio respecto a éste
+ ángulo.
+ La otra, que consideraremos acá, es utilizar la condición de equilibrio
+ 
+\begin_inset Formula $\mathbf{M}\times\mathbf{H}_{i}=0$
+\end_inset
+
+, con 
+\begin_inset Formula $\mathbf{H}_{i}$
+\end_inset
+
+ como el campo interno, y estará dado por las contribuciones dipolares y
+ de anisotropía.
+ Notar que el intercambio, al ser 
+\begin_inset Formula $\mathbf{M}_{0}$
+\end_inset
+
+ uniforme, no contribuye.
+ Así mismo, en caso de que tuviéramos las interacciones de DM, ya que son
+ proporcionales a la derivada espacial de 
+\begin_inset Formula $\mathbf{M}$
+\end_inset
+
+.
+ Luego, el campo interno estará dado por
+\begin_inset Formula 
+\begin{equation}
+\mathbf{H}_{i}=\mathbf{H}_{0}-\hat{y}\,4\pi M_{s}\sin\phi_{M}+\hat{y}\,H_{u}\sin\phi_{M},
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $H_{\text{u}}=2K_{u}/M_{s}$
+\end_inset
+
+ es el campo asociado a la anisotropía uniaxial, con el eje difícil perpendicula
+r al plano de la lámina (en caso de requerir un eje fácil de anisotropía,
+ basta con hacer 
+\begin_inset Formula $K_{u}<0$
+\end_inset
+
+) .
+ El segundo término viene de las interacciones dipolares, y se ve fácilmente
+ tomando en cuenta los tensores demagnetizantes, por lo que, según nuestro
+ sistema de referencia, 
+\begin_inset Formula $N_{y}=1$
+\end_inset
+
+.
+ De acuerdo a lo anterior, y denotando 
+\begin_inset Formula $M_{\text{eff}}=H_{u}+4\pi M_{s}$
+\end_inset
+
+, la condición de equilibrio queda
+\begin_inset Formula 
+\[
+\sin(\phi_{H}-\phi_{M})=\frac{M_{\text{eff}}}{2}\sin2\phi_{M}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A continuación, para analizar la dinámica de la magnetización y considerar
+ las ondas de espín, sometemos al sistema a un pequeño 
+\emph on
+campo transversal de microondas
+\emph default
+ 
+\begin_inset Formula $\mathbf{h}$
+\end_inset
+
+, lo cual hará que 
+\begin_inset Formula $\mathbf{M}$
+\end_inset
+
+ se desvíe levemente de su posición de equilibrio.
+ Como el film es delgado, solo consideramos las componentes de la magnetización
+ en el plano, de forma que podemos escribirla como una parte estática más
+ una dinámica según
+\begin_inset Formula 
+\[
+\mathbf{M}(\mathbf{r};t)=M_{Z}\hat{Z}+\mathbf{m}(\mathbf{r};t)
+\]
+
+\end_inset
+
+en que 
+\begin_inset Formula $\mathbf{m}(\mathbf{r};t)=m_{X}(x,z;t)\hat{X}+m_{Y}(x,z;t)\hat{Y}$
+\end_inset
+
+ es la magnetización transversal promediada en el espesor del film, 
+\begin_inset Formula $\mathbf{r}$
+\end_inset
+
+ se refiere a un vector en el plano, y 
+\begin_inset Formula $m\ll M_{s}$
+\end_inset
+
+.
+ De esta relación, podemos deducir que
+\begin_inset Formula 
+\[
+M_{Z}=\sqrt{M_{s}^{2}-m^{2}}=M_{s}-\frac{1}{2M_{s}}m^{2}+\cdots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Luego, a segundo orden, tenemos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+M_{x} & = & m_{x}\label{eq:Mx}\\
+M_{y} & = & M_{Z}\sin\phi_{M}+m_{Y}\cos\phi_{M}\label{eq:My}\\
+M_{z} & = & M_{Z}\cos\phi_{M}-m_{Y}\sin\phi_{M}\label{eq:Mz}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Será necesario también, considerar la transformada de Fourier de la magnetizació
+n dinámica
+\begin_inset Formula 
+\begin{equation}
+m_{X,Y}(\mathbf{r};t)=\frac{1}{\sqrt{L^{2}d}}\sum_{\mathbf{k}}m_{X,Y}(\mathbf{k};t)\,e^{i\mathbf{k}\cdot\mathbf{r}},\label{eq:m-Fourier}
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $\mathbf{k}$
+\end_inset
+
+ se refiere al vector de onda con componentes en el plano y 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ es el área del film.
+ Notar que 
+\begin_inset Formula $m_{X,Y}^{*}(\mathbf{k},t)=m_{X,Y}(-\mathbf{k},t)$
+\end_inset
+
+.
+ También será útil la relación
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{L^{2}}\int e^{i(\mathbf{k}-\mathbf{k}')\cdot\mathbf{r}}\,dx\,dz=\delta_{\mathbf{k},\mathbf{k}'}.\label{eq:Fourier-delta}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+El Hamiltoniano
+\end_layout
+
+\begin_layout Standard
+Para obtener el hamiltoniano total del sistema, debemos considerar todas
+ las contribuciones de energía provenientes de las interacciones que especificam
+os anteriormente, de forma que 
+\begin_inset Formula 
+\[
+\mathcal{H}=\mathcal{H}_{\text{d}}+\mathcal{H}_{\text{Z}}+\mathcal{H}_{\text{a}}+\mathcal{H}_{\text{e}}
+\]
+
+\end_inset
+
+donde cada término, de izquierda a derecha, son el de la energía dipolar,
+ la de Zeeman, la de anisotropía y la de intercambio.
+ Para este sistema, los términos están calculados en la referencia 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Landeros2008"
+literal "true"
+
+\end_inset
+
+.
+ En caso de que tuviéramos interacciones de DM, hay que agregar al hamiltoniano
+ un término extra 
+\begin_inset Formula $\mathcal{H}_{\text{DM}}$
+\end_inset
+
+, lo cual se especificará en el capítulo respectivo.
+\end_layout
+
+\begin_layout Standard
+La idea general, es escribir el hamiltoniano de la forma
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccl}
+\mathcal{H} & = & {\displaystyle \frac{1}{2M_{s}}\sum_{\mathbf{k}}\Bigl\{\mathcal{W}_{X}(\mathbf{k})m_{X}^{*}(\mathbf{k};t)m_{X}(\mathbf{k};t)+\mathcal{W}_{Y}(\mathbf{k})m_{Y}^{*}(\mathbf{k};t)m_{Y}(\mathbf{k};t)}\\
+ &  & {\displaystyle \qquad\qquad+\mathcal{W}_{XY}(\mathbf{k})m_{X}^{*}(\mathbf{k};t)m_{Y}(\mathbf{k};t)+\mathcal{W}_{YX}(\mathbf{k})m_{Y}^{*}(\mathbf{k};t)m_{X}(\mathbf{k};t)\Bigr\}}
+\end{array}\label{eq:hamiltonian}
+\end{equation}
+
+\end_inset
+
+y obtener los coeficientes que acompañan a las componentes de la magnetización
+ dinámica, que contienen los aportes de todas las interacciones.
+ Para lograr esto, uno calcula la energía del sistema como se mostró en
+ la Sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Energías-del-sistema"
+
+\end_inset
+
+, en término de las magnetizaciones 
+\begin_inset Formula $m_{X,Y}(\mathbf{r};t)$
+\end_inset
+
+ (dependiente de las coordenadas espaciales) hasta segundo orden.
+ Luego transformarlas en Fourier según la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:m-Fourier"
+
+\end_inset
+
+ y simplificarlas utilizando 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Fourier-delta"
+
+\end_inset
+
+ para obtener la forma deseada.
+ En el Apéndice 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Anisotropia-en-el-plano"
+
+\end_inset
+
+ se realiza el cálculo para una anisotropía con eje en el plano, donde se
+ explicita el procedimiento anterior.
+\end_layout
+
+\begin_layout Standard
+De acuerdo a la referencia 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Landeros2008"
+literal "true"
+
+\end_inset
+
+, las expresiones para los coeficientes sin las IDM, con una anisotropía
+ con eje perpendicular al plano de la película, son
+\begin_inset Formula 
+\[
+\begin{array}{ccl}
+\mathcal{W}_{X} & = & H_{0}\cos(\phi_{H}-\phi_{M})-M_{\text{eff}}\sin^{2}\phi_{M}+4\pi M_{s}F(kd)\sin^{2}\phi_{\mathbf{k}}+Dk^{2}\\
+\mathcal{W}_{Y} & = & H_{0}\cos(\phi_{H}-\phi_{M})+M_{\text{eff}}\cos(2\phi_{M})-4\pi M_{s}F(kd)[\cos(2\phi_{M})\\
+ &  & \hspace{30ex}+\sin^{2}\phi_{\mathbf{k}}\sin^{2}\phi_{M}]+Dk^{2}\\
+\mathcal{W}_{XY} & = & -4\pi M_{s}F(kd)\sin(\phi_{\mathbf{k}})\cos\phi_{\mathbf{k}}\sin\phi_{M}\\
+\mathcal{W}_{XY} & = & -4\pi M_{s}F(kd)\sin\phi_{\mathbf{k}}\cos\phi_{\mathbf{k}}\sin\phi_{M}
+\end{array}
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $F(x)=1-(1-e^{-x})/x$
+\end_inset
+
+ y 
+\begin_inset Formula $D=2A/M_{s}$
+\end_inset
+
+ es el denominado 
+\emph on
+exchange stiffness
+\emph default
+.
+ Observemos que en este caso 
+\begin_inset Formula $\mathcal{W}_{XY}(\mathbf{k})=\mathcal{W}_{YX}(\mathbf{k})$
+\end_inset
+
+, pero el caso general, consideraremos 
+\begin_inset Formula $\mathcal{W}_{XY}^{*}(\mathbf{k})=\mathcal{W}_{YX}(\mathbf{k})$
+\end_inset
+
+, que será válido cuando tengamos IDM.
+\end_layout
+
+\begin_layout Subsection
+Dinámica del sistema y relación de dispersión
+\end_layout
+
+\begin_layout Standard
+Nuestro objetivo ahora es analizar la dinámica del sistema y encontrar la
+ frecuencia del movimiento precesional de los momentos magnéticos.
+ De esta forma podremos obtener la relación de dispersión de las ondas de
+ espín.
+ 
+\end_layout
+
+\begin_layout Standard
+Entonces, promovemos las componentes de la magnetización dinámica 
+\begin_inset Formula $\mathbf{m}(\mathbf{k})$
+\end_inset
+
+ a operadores, que satisfacen determinadas reglas de conmutación 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Arias1999,Mills2006Quantum,Kittel1987"
+literal "true"
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[m_{X,Y}(\mathbf{k}),m_{X,Y}(\mathbf{k}')\right]=\left[m_{X,Y}(\mathbf{k}),m_{X,Y}^{*}(\mathbf{k}')\right]=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[m_{X,Y}(\mathbf{k}),m_{Y,X}(\mathbf{k}')\right]=\pm i\mu_{0}M_{s}\delta_{\mathbf{k},-\mathbf{k}'}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[m_{X,Y}(\mathbf{k}),m_{Y,X}^{*}(\mathbf{k}')\right]=\pm i\mu_{0}M_{s}\delta_{\mathbf{k},\mathbf{k}'}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Luego, la ecuación de movimiento para la magnetización estará dada por la
+ ecuación de Heisenberg
+\begin_inset Formula 
+\[
+i\hbar\dot{m}_{X,Y}(\mathbf{k})=\left[m_{X,Y}(\mathbf{k}),\mathcal{H}\right].
+\]
+
+\end_inset
+
+Usando el hecho de que cuando hacemos 
+\begin_inset Formula $\mathbf{k}\longrightarrow-\mathbf{k}$
+\end_inset
+
+, debemos cambiar el ángulo 
+\begin_inset Formula $\phi_{\mathbf{k}}$
+\end_inset
+
+ por 
+\begin_inset Formula $\phi_{\mathbf{k}}+\pi$
+\end_inset
+
+; y que 
+\begin_inset Formula $\hbar\gamma=-\mu_{0}$
+\end_inset
+
+, llegamos a un par de ecuaciones (detalles en el Apéndice 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Dinamica-del-sistema"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\dot{m}_{X}(\mathbf{k}) & = & -\gamma\left\{ \mathcal{W}_{Y}(\mathbf{k})m_{Y}(\mathbf{k})+\mathcal{W}_{YX}(\mathbf{k})m_{X}(\mathbf{k})\right\} \\
+\dot{m}_{Y}(\mathbf{k}) & = & \gamma\left\{ \mathcal{W}_{X}(\mathbf{k})m_{X}(\mathbf{k})+\mathcal{W}_{XY}(\mathbf{k})m_{Y}(\mathbf{k})\right\} 
+\end{eqnarray}
+
+\end_inset
+
+las cuales podemos escribir en forma matricial
+\begin_inset Formula 
+\begin{equation}
+\left(\begin{array}{c}
+\dot{m}_{X}\\
+\dot{m}_{Y}
+\end{array}\right)=\gamma\left(\begin{array}{cc}
+-\mathcal{W}_{YX} & -\mathcal{W}_{Y}\\
+\mathcal{W}_{X} & \mathcal{W}_{XY}
+\end{array}\right)\left(\begin{array}{c}
+m_{X}\\
+m_{Y}
+\end{array}\right).\label{eq:matrix}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ya que estamos considerando un sistema sometido a un campo de microondas
+ armónico, proponemos 
+\begin_inset Formula $m_{X,Y}(\mathbf{k};t)=\mathcal{M}_{X,Y}(\mathbf{k})e^{-i\Omega t}$
+\end_inset
+
+ para encontrar sus modos normales.
+ Entonces, reemplazando esta solución en la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:matrix"
+
+\end_inset
+
+, obtendremos una ecuación característica para 
+\begin_inset Formula $\Omega$
+\end_inset
+
+, las cuales serán las frecuencias propias de estos modos.
+ Luego, resolviéndola, llegamos a una relación de dispersión para las ondas
+ de espín:
+\begin_inset Formula 
+\begin{equation}
+\Omega_{\pm}(\mathbf{k})=\gamma\left\{ -\Im[\mathcal{W}_{XY}]\pm\sqrt{\mathcal{W}_{X}\mathcal{W}_{Y}-\Re[\mathcal{W}_{XY}]^{2}}\right\} .\label{eq:dispersion}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta relación es general y es válida siempre que 
+\begin_inset Formula $\mathcal{W}_{XY}(\mathbf{k})=\mathcal{W}_{YX}^{*}(\mathbf{k})$
+\end_inset
+
+.
+ Si no hay IDM, la parte imaginaria se anula y obtenemos la relación usual
+ de la referencia 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Landeros2008"
+literal "true"
+
+\end_inset
+
+.
+ La discusión se dejará para los capítulos correspondientes.
+\end_layout
+
+\begin_layout Subsection
+Susceptibilidad dinámica
+\end_layout
+
+\begin_layout Standard
+Es posible deducir una expresión para las susceptibilidades dinámicas del
+ sistema analizando las ecuaciones de movimiento de los espines, como en
+ el caso anterior.
+ Así, obtendremos expresiones que nos darán información del espectro de
+ absorción del film.
+ Para lograr esto, utilizaremos la teoría de respuesta lineal, de donde
+ evaluaremos las funciones respuesta definidas como 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Landeros2008"
+literal "true"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+S_{\alpha\beta}(\mathbf{k};t)=\frac{i}{\hbar}\Theta(t)\left\langle \left[m_{\alpha}(\mathbf{k};t),m_{\beta}^{\dagger}(\mathbf{k};0)\right]\right\rangle \label{eq:fcsrespuesta}
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $\alpha,\beta=X,Y$
+\end_inset
+
+ y 
+\begin_inset Formula $\Theta(t)$
+\end_inset
+
+ es la función paso de Heaviside.
+ Será necesario la transformada de Fourier de estas funciones, cuyas expresiones
+ son
+\begin_inset Formula 
+\begin{equation}
+S_{\alpha\beta}(\mathbf{k};\Omega)=\int_{-\infty}^{+\infty}S_{\alpha\beta}(\mathbf{k};t)e^{i\Omega t}\,dt.\label{eq:response-fourier}
+\end{equation}
+
+\end_inset
+
+Asumiendo que estamos en un régimen donde el campo de microondas es lo suficient
+emente débil, las funciones respuesta 
+\begin_inset Formula $S_{\alpha\beta}$
+\end_inset
+
+ representan efectivamente las susceptibilidades del sistema (
+\begin_inset Formula $m_{\alpha}(\mathbf{k};\Omega)=S_{\alpha\beta}(\mathbf{k};\Omega)h_{\beta}$
+\end_inset
+
+), las cuales dependen de la frecuencia y del vector de onda 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Landeros2008"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Con esto en mente, podemos derivar las funciones respuesta
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+i\hbar\frac{\partial S_{\alpha\beta}(\mathbf{k},t)}{\partial t}=\hbar\Omega S_{\alpha\beta}(\mathbf{k},t),\label{eq:derivfcnrespuesta}
+\end{equation}
+
+\end_inset
+
+de manera que al realizar la derivación al lado derecho de la igualdad en
+ la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fcsrespuesta"
+
+\end_inset
+
+, hará más directo los cálculos.
+\end_layout
+
+\begin_layout Standard
+Tomando en cuenta el 
+\emph on
+damping
+\emph default
+ del sistema, debemos introducirlo en la ecuación de la dinámica de los
+ momentos:
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial m_{\alpha}(\mathbf{k};t)}{\partial t}=\frac{1}{i\hbar}\left[m_{\alpha}(\mathbf{k};t),\mathcal{H}(t)\right]+\frac{g}{M_{s}}\epsilon_{\alpha\mu\nu}M_{\mu}\frac{\partial M_{\nu}}{\partial t},
+\end{equation}
+
+\end_inset
+
+en donde 
+\begin_inset Formula $\epsilon_{\alpha\mu\nu}$
+\end_inset
+
+ es el tensor de Levi-Civitta y 
+\begin_inset Formula $g$
+\end_inset
+
+ es la constante de damping adimensional.
+ Entonces, derivando la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fcsrespuesta"
+
+\end_inset
+
+ y considerando la relación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:derivfcnrespuesta"
+
+\end_inset
+
+, obtenemos
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccl}
+\hbar\Omega S_{\alpha\beta}(\mathbf{k},t) &  & {\displaystyle \delta(t)\left\langle \left[m_{\beta}^{\dagger}(\mathbf{k},0),m_{\alpha}(\mathbf{k},t)\right]\right\rangle }\\
+ &  & \hspace{3em}+\frac{i}{\hbar}\Theta(t)\left\langle \left[\left[m_{\alpha}(\mathbf{k},t),\mathcal{H}(t)\right],m_{\beta}^{\dagger}(\mathbf{k},0)\right]\right\rangle \\
+ &  & {\displaystyle \hspace{3em}-\frac{g}{\hbar M_{s}}\Theta(t)\epsilon_{\alpha\mu\nu}\left\langle \left[M_{\mu}(\mathbf{k},t)\frac{\partial M_{\nu}(\mathbf{k},t)}{\partial t},m_{\beta}^{\dagger}(\mathbf{k},0)\right]\right\rangle }.
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora la evaluación es directa si queremos 
+\begin_inset Formula $S_{XX}$
+\end_inset
+
+ y 
+\begin_inset Formula $S_{YX}$
+\end_inset
+
+, cuyas expresiones están relacionadas.
+ Empleando las reglas de conmutación de los momentos, conseguimos un par
+ de ecuaciones
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+(\Omega+i\gamma\mathcal{W}_{YX}(\mathbf{k}))S_{XX}(\mathbf{k};t)=-i\gamma\widetilde{\mathcal{W}}_{Y}(\mathbf{k})S_{YX}(\mathbf{k};t)
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+(\Omega-i\gamma\mathcal{W}_{XY}(\mathbf{k}))S_{YX}(\mathbf{k};t) & = & -i\gamma M_{s}\delta(t)+i\gamma\widetilde{\mathcal{W}}_{X}(\mathbf{k})S_{XX}(\mathbf{k};t)
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+en las cuales 
+\begin_inset Formula 
+\[
+\widetilde{\mathcal{W}}_{X,Y}(\mathbf{k})=\mathcal{W}_{X,Y}(\mathbf{k})-\frac{ig\Omega}{\gamma}.
+\]
+
+\end_inset
+
+Aplicando ahora la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:response-fourier"
+
+\end_inset
+
+ para que las funciones respuesta sean dependientes de la frecuencia, llegamos
+ a las expresiones para las cuatro componentes del tensor de susceptibilidad,
+ dependientes de la frecuencia y los vectores de onda:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+S_{XX}(\mathbf{k};\Omega) & = & \frac{\gamma^{2}M_{s}\widetilde{\mathcal{H}}_{Y}(\mathbf{k})}{\widetilde{\Omega}(\mathbf{k})^{2}-\Omega^{2}},\\
+S_{YX}(\mathbf{k};\Omega) & = & \frac{i\gamma M_{s}\left(\Omega+i\gamma\mathcal{W}_{YX}(\mathbf{k})\right)}{\widetilde{\Omega}(\mathbf{k})^{2}-\Omega^{2}}\\
+S_{YY}(\mathbf{k};\Omega) & = & \frac{\gamma^{2}M_{s}\widetilde{\mathcal{W}}_{X}(\mathbf{k})}{\widetilde{\Omega}(\mathbf{k})^{2}-\Omega^{2}}\\
+S_{XY}(\mathbf{k};\Omega) & = & -\frac{i\gamma M_{s}\left(\Omega-i\gamma\mathcal{W}_{XY}(\mathbf{k})\right)}{\widetilde{\Omega}(\mathbf{k})^{2}-\Omega^{2}}
+\end{eqnarray}
+
+\end_inset
+
+donde hemos definido 
+\begin_inset Formula 
+\begin{equation}
+\widetilde{\Omega}(\mathbf{k})^{2}=\gamma^{2}\widetilde{\mathcal{W}}_{Y}(\mathbf{k})\widetilde{\mathcal{W}}_{X}(\mathbf{k})-\gamma^{2}\left|\mathcal{W}_{XY}(\mathbf{k})\right|^{2}+2\gamma\Omega\,\Im\left[\mathcal{W}_{YX}(\mathbf{k})\right].\label{eq:omega-tilde}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finalmente, el espectro de absorción se encontrará en la parte imaginaria
+ de las funciones respuesta, que representan la susceptibilidad del sistema.
+ Así que, tomando en cuenta las definiciones de 
+\begin_inset Formula $\widetilde{\mathcal{W}}_{X}$
+\end_inset
+
+ y 
+\begin_inset Formula $\widetilde{\mathcal{W}}_{Y}$
+\end_inset
+
+ e insertándolas en la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:omega-tilde"
+
+\end_inset
+
+, podemos racionalizar 
+\begin_inset Formula $S_{XX}(\mathbf{k};\Omega)$
+\end_inset
+
+ para separar la parte real y la imaginaria.
+ Luego, la parte imaginaria de la función 
+\begin_inset Formula $S_{XX}(\mathbf{k};\Omega)$
+\end_inset
+
+ será
+\begin_inset Formula 
+\begin{equation}
+\Im\left[S_{XX}(\mathbf{k},\Omega)\right]=\frac{\gamma M_{s}\left(\gamma\Lambda(\mathbf{k})\mathcal{W}_{Y}(\mathbf{k})-g\Omega\xi(\mathbf{k})\right)}{\left[\Omega(\mathbf{k})^{2}-\Omega^{2}+2\gamma\Im[\mathcal{W}_{XY}](\Omega(\mathbf{k})-\Omega)\right]^{2}+(\gamma g\Omega)^{2}\Lambda(\mathbf{k})^{2}}\label{eq:imaginary-part-absorption}
+\end{equation}
+
+\end_inset
+
+en que
+\begin_inset Formula 
+\begin{equation}
+\xi(\mathbf{k})=\Omega(\mathbf{k})^{2}-\Omega^{2}+2\gamma\Im[\mathcal{W}_{XY}](\Omega(\mathbf{k})-\Omega)-(g\Omega)^{2}\label{eq:xi-absorcion}
+\end{equation}
+
+\end_inset
+
+y
+\begin_inset Formula 
+\begin{equation}
+\Lambda(\mathbf{k})=g\Omega\gamma(\mathcal{W}_{X}(\mathbf{k})+\mathcal{W}_{Y}(\mathbf{k})).\label{eq:Lambda-absorcion}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Influencia de las Interacciones de Dzyaloshinskii-Moriya en el espectro
+ de ondas de espín
+\end_layout
+
+\begin_layout Standard
+Este capítulo está dedicado a describir la influencia que tienen las IDM
+ en el espectro de ondas de espín de una película ferromagnética delgada.
+ El modelo teórico fue descrito en el Capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Micromagnetismo"
+
+\end_inset
+
+, por lo que haremos uso de sus resultados.
+\end_layout
+
+\begin_layout Standard
+Investigaciones recientes en este tipo de sistemas, han reportado la influencia
+ de las IDM en el espectro de ondas de espín en una o dos monocapas de Fe
+ sobre W(110).
+ Por ejemplo, Udvardi 
+\emph on
+et al.
+
+\emph default
+ predijeron una asimetría en la relación de dispersión de las ondas de espín
+ asumiendo una estructura quiral para la magnetización de una monocapa de
+ Fe, a través de un modelo discreto apropiado para la red cristalina del
+ Fe/W(110), pero sin considerar un campo externo o interacciones dipolares
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Udvardi2009"
+literal "true"
+
+\end_inset
+
+.
+ También, Costa et al.
+ desarrollaron una teoría, la cual estima completamente los acoplamientos
+ espín-órbita de las excitaciones colectivas de espín en una y dos monocapas
+ de Fe, observando un término lineal en la relación de dispersión, así como
+ asimetrías en el espectro de absorción de las ondas de espín 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Costa2010"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En nuestro caso, consideramos un film saturado bajo un campo externo, por
+ lo que nuestra teoría difiere un poco con los trabajos citados anteriormente.
+ A pesar de esto, nuestro modelo toma en cuenta las interacciones dipolares
+ y, como discutiremos más adelante, se observarán resultados que concuerdan
+ con los otros reportes, como la existencia de un término lineal en la relación
+ de dispersión de las ondas de espín y el corrimiento de las frecuencias
+ y campos de resonancia.
+ Además, extendemos nuestros resultados a diferentes clases de simetría
+ a través de los Invariantes de Lifshitz 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bogdanov1989,Leonov2012"
+literal "true"
+
+\end_inset
+
+, los cuales nos permiten probar que el espectro de ondas de espín dependerá
+ del grupo puntual del material que estemos considerando.
+ Por último, para hacer referencia a sistemas delgados reportados recientemente,
+ deducimos expresiones en el límite micromagnético para los Invariantes
+ de Lifshitz asociados a la geometría de la superficie de láminas de baja
+ dimensionalidad.
+\end_layout
+
+\begin_layout Section
+Energía de las IDM
+\end_layout
+
+\begin_layout Standard
+Como se dijo anteriormente, cuando hay IDM, debemos agregar al hamiltoniano
+ del sistema un término de energía 
+\begin_inset Formula $\mathcal{H}_{\text{DM}}$
+\end_inset
+
+, que describe el intercambio asimétrico entre los espines.
+ Para discutir los resultados, nos centraremos en una combinación de invariantes
+ en particular, que corresponde al grupo puntual (o clase de simetría) 
+\begin_inset Formula $T$
+\end_inset
+
+, el cual se puede encontrar en sistemas de MnSi.
+ La expresión matemática de la densidad de energía en nuestra descripción
+ del problema, es de la forma 
+\begin_inset Formula $w_{\text{DM}}=\lambda_{DM}\left(\mathcal{L}_{xz}^{(y)}+\mathcal{L}_{zy}^{(x)}+\mathcal{L}_{yx}^{(z)}\right)$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bogdanov1989,Leonov2012"
+literal "true"
+
+\end_inset
+
+.
+ Por lo tanto, debemos calcular
+\begin_inset Formula 
+\begin{equation}
+\mathcal{L}=M_{x}\frac{\partial M_{z}}{\partial y}-M_{z}\frac{\partial M_{x}}{\partial y}+M_{z}\frac{\partial M_{y}}{\partial x}-M_{y}\frac{\partial M_{z}}{\partial x}+M_{y}\frac{\partial M_{x}}{\partial z}-M_{x}\frac{\partial M_{y}}{\partial z},\label{eq:MnSi-Invariants}
+\end{equation}
+
+\end_inset
+
+lo cual haremos con las ecuaciones 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:My"
+
+\end_inset
+
+.
+ Dejando términos de hasta segundo orden en las componentes dinámicas de
+ la magnetización 
+\begin_inset Formula $\mathbf{m}$
+\end_inset
+
+, nos quedamos con
+\begin_inset Formula 
+\begin{equation}
+\mathcal{L}\approx M_{s}\frac{\partial m_{Y}}{\partial x}+M_{s}\sin\phi_{M}\frac{\partial m_{X}}{\partial z}+m_{Y}\cos\phi_{M}\frac{\partial m_{X}}{\partial z}-m_{X}\cos\phi_{M}\frac{\partial m_{Y}}{\partial z}.\label{eq:T-invariant-second-order}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el límite de un film muy delgado como habíamos establecido inicialmente,
+ las componentes dinámicas de la magnetización solo dependen de las componentes
+ espaciales en el plano 
+\begin_inset Formula $x-z$
+\end_inset
+
+, es decir, 
+\begin_inset Formula $m_{X,Y}(\mathbf{r};t)=m_{X,Y}(x,z;t)$
+\end_inset
+
+, de forma que la contribución de las IDM al hamiltoniano total será
+\begin_inset Formula 
+\[
+\mathcal{H}_{\text{DM}}=\lambda_{\text{DM}}\,d\int\mathcal{L}(x,z;t)\,dx\,dz.
+\]
+
+\end_inset
+
+Luego, si utilizamos la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:m-Fourier"
+
+\end_inset
+
+, es directo probar que los términos lineales de 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:T-invariant-second-order"
+
+\end_inset
+
+ se anulan, así que sólo consideramos los de segundo orden, 
+\begin_inset Formula 
+\[
+\mathcal{H}_{\text{DM}}=\lambda_{\text{DM}}\,d\cos\phi_{M}\int\left[m_{Y}\frac{\partial m_{X}}{\partial z}-m_{X}\frac{\partial m_{Y}}{\partial z}\right]\,dx\,dz,
+\]
+
+\end_inset
+
+donde, recordemos, que 
+\begin_inset Formula $m_{X,Y}=m_{X,Y}(x,z;t)$
+\end_inset
+
+.
+ Ahora realizamos la transformada de Fourier (ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:m-Fourier"
+
+\end_inset
+
+) con la intención de dejar 
+\begin_inset Formula $\mathcal{H}_{\text{DM}}$
+\end_inset
+
+ con la estructura de la relación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:hamiltonian"
+
+\end_inset
+
+, por lo que obtenemos la expresión
+\begin_inset Formula 
+\begin{equation}
+\mathcal{H}_{\text{DM}}=\frac{1}{2M_{s}}\sum_{\mathbf{k}}\left\{ \mathcal{W}_{XY}^{\text{DM}}(\mathbf{k})m_{X}^{*}(\mathbf{k};t)m_{Y}(\mathbf{k};t)+\mathcal{W}_{YX}^{\text{DM}}(\mathbf{k})m_{Y}^{*}(\mathbf{k};t)m_{X}(\mathbf{k};t)\right\} ,\label{eq:H_DM}
+\end{equation}
+
+\end_inset
+
+en la que definimos los coeficientes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathcal{W}_{XY}^{\text{DM}}(\mathbf{k})=-2iM_{s}k_{z}\lambda_{\text{DM}}\cos\phi_{M}\label{eq:W_DM}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\mathcal{W}_{YX}^{\text{DM}}(\mathbf{k})=2iM_{s}k_{z}\lambda_{\text{DM}}\cos\phi_{M}
+\end{equation}
+
+\end_inset
+
+con 
+\begin_inset Formula $k_{z}=k\cos\phi_{\mathbf{k}}$
+\end_inset
+
+ y 
+\begin_inset Formula $\phi_{\mathbf{k}}$
+\end_inset
+
+ el ángulo entre la magnetización y el vector de la onda de espín, 
+\begin_inset Formula $\mathbf{k}$
+\end_inset
+
+.
+ Como señalamos antes, podemos ver que 
+\begin_inset Formula $(\mathcal{W}_{XY}^{\text{DM}}(\mathbf{k}))^{*}=\mathcal{W}_{YX}^{\text{DM}}(\mathbf{k})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Ahora el hamiltoniano en la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:hamiltonian"
+
+\end_inset
+
+, tendrá los coeficientes
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccl}
+\mathcal{W}_{X}(\mathbf{k}) & = & H_{0}\cos(\phi_{H}-\phi_{M})-M_{\text{eff}}\sin^{2}\phi_{M}+4\pi M_{s}F(kd)\sin^{2}\phi_{\mathbf{k}}+Dk^{2}\\
+\mathcal{W}_{Y}(\mathbf{k}) & = & H_{0}\cos(\phi_{H}-\phi_{M})+M_{\text{eff}}\cos(2\phi_{M})-4\pi M_{s}F(kd)[\cos(2\phi_{M})\\
+ &  & \hspace{30ex}+\sin^{2}\phi_{\mathbf{k}}\sin^{2}\phi_{M}]+Dk^{2}\\
+\mathcal{W}_{XY}(\mathbf{k}) & = & -4\pi M_{s}F(kd)\sin(\phi_{\mathbf{k}})\cos\phi_{\mathbf{k}}\sin\phi_{M}-2iM_{s}k_{z}\lambda_{\text{DM}}\cos\phi_{M}\\
+\mathcal{W}_{XY}(\mathbf{k}) & = & -4\pi M_{s}F(kd)\sin\phi_{\mathbf{k}}\cos\phi_{\mathbf{k}}\sin\phi_{M}-2iM_{s}k_{z}\lambda_{\text{DM}}\cos\phi_{M}
+\end{array}\label{eq:coeficientes-DMI}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los detalles de los cálculos realizados en esta sección se encuentran en
+ el Apéndice 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Energia-de-las-IDM"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Relación de dispersión de las ondas de espín
+\end_layout
+
+\begin_layout Standard
+Con los resultados anteriores, ya tenemos las expresiones necesarias para
+ analizar la relación de dispersión de las ondas de espín.
+ Reemplazando los coeficientes de 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:coeficientes-DMI"
+
+\end_inset
+
+ en la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:dispersion"
+
+\end_inset
+
+, la relación de dispersión, para la clase de simetría 
+\begin_inset Formula $T$
+\end_inset
+
+, es
+\begin_inset Formula 
+\begin{eqnarray*}
+\Omega(\mathbf{k}) & = & 2\gamma M_{s}k\lambda_{\text{DM}}\cos\phi_{\mathbf{k}}\cos\phi_{M}\\
+ &  & \qquad+\gamma\sqrt{\mathcal{W}_{X}(\mathbf{k})\mathcal{W}_{Y}(\mathbf{k})-\big(2\pi M_{s}kd\sin\phi_{\mathbf{k}}\cos\phi_{\mathbf{k}}\sin\phi_{M}\big)^{2}}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A primera vista, es evidente que la interacción de DM se encuentra sólo
+ en el término lineal de la relación de dispersión (que es proporcional
+ a 
+\begin_inset Formula $\lambda_{\text{DM}}$
+\end_inset
+
+), resultado que concuerda con la teoría desarrollada por Costa 
+\emph on
+et al.
+
+\emph default
+ en que, considerando acoplamiento espín-órbita, aparece un término con
+ esta tendencia y se asocia con las IDM.
+ 
+\end_layout
+
+\begin_layout Standard
+En este caso (grupo puntual 
+\begin_inset Formula $T$
+\end_inset
+
+), la asimetría se percibirá en mayor grado, con la magnetización en el
+ plano del film (
+\begin_inset Formula $\phi_{M}=0$
+\end_inset
+
+) y con vectores de onda paralelos a ésta (
+\begin_inset Formula $\phi_{\mathbf{k}}=0$
+\end_inset
+
+).
+ Este resultado también se ha citado en las referencias 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Costa2010,Udvardi2009"
+literal "true"
+
+\end_inset
+
+, donde no se observa asimetría cuando la magnetización es perpendicular
+ al plano de la lámina.
+\end_layout
+
+\begin_layout Standard
+Si el sistema no presentara IDM (
+\begin_inset Formula $\lambda_{\text{DM}}=0$
+\end_inset
+
+), como en los materiales ferromagnéticos usuales, la relación de dispersión
+ sería simétrica respecto a una inversión del vector de onda (
+\begin_inset Formula $\mathbf{k}\longrightarrow-\mathbf{k}$
+\end_inset
+
+), donde éste rota 
+\begin_inset Formula $\pi$
+\end_inset
+
+ radianes y el ángulo 
+\begin_inset Formula $\phi_{\mathbf{k}}$
+\end_inset
+
+ pasa a ser 
+\begin_inset Formula $\phi_{\mathbf{k}}\pm\pi$
+\end_inset
+
+.
+ Si consideramos IDM, el término que las representa en la relación de dispersión
+ mencionada anteriormente, sujeto a una inversión del vector de onda, sufrirá
+ un cambio de signo, ya que 
+\begin_inset Formula $\cos(\phi_{\mathbf{k}}\pm\pi)=-\cos\phi_{\mathbf{k}}$
+\end_inset
+
+, y debido a este factor, habrá una asimetría en la relación, la cual ha
+ sido reportada experimentalmente por 
+\emph on
+Zakeri et al.
+
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kh.Zakeri2010,Kh.Zakeri2011"
+literal "true"
+
+\end_inset
+
+ sobre un sistema de Fe sobre W(110) y predecida en los trabajos citados
+ inicialmente en el capítulo 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Costa2010,Udvardi2009"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+De acuerdo a lo anterior, es fácil estimar la asimetría de la relación de
+ dispersión de las ondas de espín a través de la frecuencia 
+\begin_inset Formula $f(\mathbf{k})=\Omega(\mathbf{k})/2\pi$
+\end_inset
+
+, la cual se define como
+\begin_inset Formula 
+\begin{equation}
+\Delta f=f(\mathbf{k})-f(-\mathbf{k}).\label{eq:asymmetry}
+\end{equation}
+
+\end_inset
+
+Así, para la clase de simetría 
+\begin_inset Formula $T$
+\end_inset
+
+, la expresión de la asimetría será lineal en el vector de onda y tiene
+ la forma
+\begin_inset Formula 
+\begin{equation}
+\Delta f=\frac{4\gamma M_{s}k\lambda_{\text{DM}}}{2\pi}\cos\phi_{\mathbf{k}}\cos\phi_{M}.\label{eq:asymmetry-mnsi}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como habíamos establecido, de acuerdo a las distintas geometrías cristalográfica
+s de los sistemas, hay asociadas ciertas combinaciones de invariantes de
+ Lifshitz, por lo que la asimetría tendrá una expresión particular en relación
+ a cada una de éstas.
+ Por ello, hemos resumido en la Tabla 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Asymmetries"
+
+\end_inset
+
+, la expresión para la asimetría 
+\begin_inset Formula $\Delta f$
+\end_inset
+
+ asociada a los grupos puntuales reportados en la literatura, como habíamos
+ mostrado en la Tabla 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "tab:Invariantes"
+
+\end_inset
+
+.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Tabla2.pdf
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Expresiones de la asimetría para diferentes grupos puntuales.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Asymmetries"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Podemos ver que las expresiones de 
+\begin_inset Formula $\Delta f$
+\end_inset
+
+ son bastante similares, lo cual se debe a que en el límite de un film muy
+ delgado, la componente 
+\begin_inset Formula $y$
+\end_inset
+
+ de la magnetización no entra en juego y los términos de segundo orden tienen
+ la misma estructura.
+ Cabe señalar que, en el caso 
+\begin_inset Formula $\phi_{M}=\pi/2$
+\end_inset
+
+, es decir, cuando el film está saturado con la magnetización perpendicular
+ al plano del sistema, la asimetría se anula para cualquier clase cristalográfic
+a, de manera que las IDM sólo se percibirán, como habíamos manifestado,
+ en mayor magnitud cuando la magnetización es paralela al plano del film.
+ Además, dependiendo de la clase de simetría, tendremos una dependencia
+ en el ángulo 
+\begin_inset Formula $\phi_{\mathbf{k}}$
+\end_inset
+
+ que forman el vector de onda 
+\begin_inset Formula $\mathbf{k}$
+\end_inset
+
+ y la magnetización 
+\begin_inset Formula $\mathbf{M}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+De estos resultados es importante rescatar que es posible estimar las constantes
+ de DM en caso de que un experimento de esta índole se pudiera llevar a
+ cabo.
+ Como mencionamos en la Tabla 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "tab:Asymmetries"
+
+\end_inset
+
+, las principales clases de simetría a las cuales los ferromagnetos pueden
+ pertenecer, pero, en principio, es posible obtener también una expresión
+ de los invariantes de Lifshitz asociados a sistemas ferromagnéticos delgados
+ más comunes que presentan IDM 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Vedmedenko2007,Udvardi2009"
+literal "true"
+
+\end_inset
+
+, como Fe sobre W(110), debido a la baja simetría de su superficie.
+ Solo bastaría con realizar el límite al continuo de la expresión discreta
+ de la energía de las IDM, cuya forma es 
+\begin_inset Formula $\sum_{i,j}\mathbf{D}_{ij}\cdot\mathbf{S}_{i}\times\mathbf{S}_{j}$
+\end_inset
+
+, teniendo en cuenta los vecinos cercanos en la red del cristal y la dirección
+ de los vectores de Dzyaloshinskii 
+\begin_inset Formula $\mathbf{D}_{ij}$
+\end_inset
+
+ en ésta.
+ Un tratamiento detallado de las expresiones discretas y de la geometría
+ de estos sólidos, se encuentra en las referencias 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Crepieux1998"
+literal "true"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Vedmedenko2007"
+literal "true"
+
+\end_inset
+
+.
+ No obstante, hay que considerar que estos sistemas, en general, constan
+ de unas pocas monocapas, por lo que el límite micromagnético puede no seguir
+ siendo válido, debido a la baja dimensionalidad en su espesor.
+ Pero, si los parámetros están dentro de un rango aceptable, sería posible,
+ a partir de este tratamiento, obtener fácilmente las constantes de DM ajustando
+ las curvas de la relación de dispersión con las de datos experimentales.
+ A continuación, presentamos un ejemplo donde calculamos los invariantes
+ asociados a un sistema de baja simetría y cuyos vectores de Dzyaloshinskii
+ son conocidos.
+\end_layout
+
+\begin_layout Section
+Invariantes para superficies de baja dimensionalidad
+\end_layout
+
+\begin_layout Subsection
+Arreglo cuadrado bcc(001)
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/nearest-neighbour.pdf
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Orientaciones de los vectores de Dzyaloshinskii 
+\begin_inset Formula $\mathbf{D}_{i}$
+\end_inset
+
+ y los sitios con sus vecinos más cercanos para la superficie de una geometría
+ cristalina cuadrada bcc(001) de un sistema bidimensional.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:square-lattice-bcc"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un ejemplo concreto, es el caso de la superficie de un sistema cristalino
+ cúbico bcc(001) reportado en las referencias 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Vedmedenko2007,Udvardi2008"
+literal "true"
+
+\end_inset
+
+.
+ Los vectores de Dzyaloshinskii entre vecinos cercanos, como se muestra
+ en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:square-lattice-bcc"
+
+\end_inset
+
+, adecuados a nuestro sistema, están dados por 
+\begin_inset Formula $\mathbf{D}_{1}=D\hat{z}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{D}_{2}=-D\hat{x}$
+\end_inset
+
+.
+ Acá solo consideramos el caso donde las constantes de los vectores son
+ iguales, 
+\begin_inset Formula $D_{1}=D_{2}$
+\end_inset
+
+.
+ La energía de las interacciones, denotando 
+\begin_inset Formula $S_{j}^{(\alpha)}$
+\end_inset
+
+ como la componente 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ del espín 
+\begin_inset Formula $j$
+\end_inset
+
+, será por lo tanto
+\begin_inset Formula 
+\begin{eqnarray}
+\mathcal{H}_{\text{DM}} & = & \sum_{i,j}\mathbf{D}_{ij}\cdot\left(\mathbf{S}_{i}\times\mathbf{S}_{j}\right)\nonumber \\
+ & = & \sum_{i}\left\{ -D_{2}\left(S_{i}^{(y)}S_{i+z}^{(z)}-S_{i}^{(z)}S_{i+z}^{(y)}\right)+D_{1}\left(S_{i}^{(x)}S_{i+x}^{(y)}-S_{i}^{(y)}S_{i+x}^{(x)}\right)\right\} \label{eq:invariants-bcc001}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Considerando ahora el espín del sitio 
+\begin_inset Formula $i$
+\end_inset
+
+ como un vector clásico (límite al continuo) con coordenadas 
+\begin_inset Formula $\mathbf{x}=(x,y,z)$
+\end_inset
+
+ del momento magnético (
+\begin_inset Formula $\mathbf{S}_{i}\longrightarrow(S/M_{s})\mathbf{M}(x,y,z)$
+\end_inset
+
+, con 
+\begin_inset Formula $S$
+\end_inset
+
+ como el espín total del sitio), podemos aproximar 
+\begin_inset Formula 
+\[
+\mathbf{S}_{i+z}\longrightarrow\frac{S}{M_{s}}\mathbf{M}(x,y,z+\Delta z)\approx\frac{S}{M_{s}}\left(\mathbf{M}(\mathbf{x})+\frac{\partial\mathbf{M}(\mathbf{x})}{\partial z}\Delta z\right).
+\]
+
+\end_inset
+
+De forma análoga se obtiene una expresión para el vecino en la otra dirección,
+ 
+\begin_inset Formula $j=i+x$
+\end_inset
+
+.
+ Así, llegamos a 
+\begin_inset Formula 
+\[
+\mathcal{H}_{\text{DM}}=\frac{S^{2}D}{M_{s}^{2}}\sum_{\mathbf{x}}\left\{ -\mathcal{L}_{yz}^{(z)}\Delta z+\mathcal{L}_{xy}^{(x)}\Delta x\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora, como estamos en el límite micromagnético y tenemos celdas cuadradas,
+ podemos multiplicar la expresión por 
+\begin_inset Formula $\Delta x\Delta y/a^{2}=\Delta y\Delta z/a^{2}=1$
+\end_inset
+
+ y hacer 
+\begin_inset Formula $\Delta V=\Delta x\Delta y\Delta z\longrightarrow0$
+\end_inset
+
+ para formar la integral, con lo que llegamos a una expresión más familiar
+\begin_inset Formula 
+\[
+\mathcal{H}_{\text{DM}}=\lambda_{\text{DM}}\int_{V}\left\{ \mathcal{L}_{yz}^{(z)}+\mathcal{L}_{yx}^{(x)}\right\} dV,
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $\lambda_{\text{DM}}=-S^{2}D/M_{s}^{2}a^{2}$
+\end_inset
+
+ es la constante de DM.
+ Esta misma combinación de invariantes se cita en la ecuación (8) de la
+ referencia 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bogdanov2001"
+literal "true"
+
+\end_inset
+
+.
+ Una investigación reciente, que utiliza esta geometría para describir un
+ sistema, es el de la referencia 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Udvardi2008"
+literal "true"
+
+\end_inset
+
+, en el que se analizan monocapas de Mn sobre W(001).
+ 
+\end_layout
+
+\begin_layout Subsection
+Arreglo bcc(110)
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Arreglo-bcc(110)"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es posible extender el cálculo anterior a distintas configuraciones cristalográf
+icas.
+ Para el caso de Fe sobre W(110), podemos considerar el arreglo bcc(110)
+ como se muestra en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:square-lattice-bcc-2"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/nearest-neighbour-2.pdf
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Orientaciones de los vectores de Dzyaloshinskii 
+\begin_inset Formula $\mathbf{D}_{i}$
+\end_inset
+
+ de la superficie de un arreglo bcc(110) (losenge lattice).
+ La dirección de los vectores los asumimos de la referencia 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Udvardi2009"
+literal "true"
+
+\end_inset
+
+.
+ En estos sistemas, de una o dos monocapas de Fe sobre W(110), la constante
+ de red 
+\begin_inset Formula $2\Delta z$
+\end_inset
+
+, será la del W.
+ La proporción con la constante a lo largo de 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+, se mantiene como 
+\begin_inset Formula $(2\Delta x)=\sqrt{2}(2\Delta z)$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Udvardi2009,Qian2001"
+literal "true"
+
+\end_inset
+
+.
+ Los sitios 
+\begin_inset Formula $j$
+\end_inset
+
+ se refieren a los vecinos más cercanos, mientras que el sitio que ilustramos
+ en la parte superior del 
+\begin_inset Formula $i$
+\end_inset
+
+, corresponde al siguiente más cercano, en que el vector de DM está en la
+ dirección 
+\begin_inset Formula $-\hat{z}$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:square-lattice-bcc-2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tomando en cuenta que hay 4 vecinos más cercanos, separaremos los cálculos
+ para los dos vecinos señalados en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:square-lattice-bcc-2"
+
+\end_inset
+
+ y asumiremos que los vectores de Dzyaloshinskii tienen la misma magnitud
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Udvardi2009"
+literal "true"
+
+\end_inset
+
+.
+ Los otros dos vecinos dan exactamente el mismo resultado, por lo que bastaría
+ tomar el doble del resultado que obtengamos.
+ Entonces, el hamiltoniano del primer vecino será
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{H}_{\text{DM}}^{(1)} & = & \sum_{i,j}\mathbf{D}_{ij}\cdot\left(\mathbf{S}_{i}\times\mathbf{S}_{j}\right)\\
+ & = & \sum_{i}\left\{ -D_{z}\left(S_{i}^{(x)}S_{i+\boldsymbol{\epsilon}_{1}}^{(y)}-S_{i}^{(y)}S_{i+\boldsymbol{\epsilon}_{1}}^{(x)}\right)+D_{x}\left(S_{i}^{(y)}S_{i+\boldsymbol{\epsilon}_{1}}^{(z)}-S_{i}^{(z)}S_{i+\boldsymbol{\epsilon}_{1}}^{(y)}\right)\right\} ,
+\end{eqnarray*}
+
+\end_inset
+
+en que 
+\begin_inset Formula $\boldsymbol{\epsilon}_{1}=\Delta z\,\hat{z}+\Delta x\,\hat{x}$
+\end_inset
+
+.
+ El cálculo del segundo vecino es similar, solo que en tal caso se tendría
+ 
+\begin_inset Formula $\boldsymbol{\epsilon}_{2}=-\Delta z\,\hat{z}+\Delta x\,\hat{x}$
+\end_inset
+
+.
+ Denotaremos 
+\begin_inset Formula $\mathcal{H}_{\text{DM}}^{(\alpha)}=\sum_{i}S_{i}^{(\alpha)}$
+\end_inset
+
+.
+ Según la geometría, la cual es similar al caso anterior, se obtendrá un
+ invariante con la misma estructura, pero con diferentes constantes de la
+ red.
+\end_layout
+
+\begin_layout Standard
+Reduciendo términos y considerando los 4 vecinos, el hamiltoniano para las
+ IDM en este arreglo será 
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{H}_{\text{DM}} & =2 & \sum_{i}\left\{ \mathcal{S}_{i}^{(1)}+\mathcal{S}_{i}^{(2)}\right\} \\
+ & = & 4\sum_{i}\left\{ -D_{z}\left(S_{i}^{(x)}\frac{\partial S_{i}^{(y)}}{\partial x}-S_{i}^{(y)}\frac{\partial S_{i}^{(x)}}{\partial x}\right)\Delta x\right.\\
+ &  & \qquad\qquad\left.+D_{x}\left(S_{i}^{(y)}\frac{\partial S_{i}^{(z)}}{\partial z}-S_{i}^{(z)}\frac{\partial S_{i}^{(y)}}{\partial z}\right)\Delta z\right\} ,
+\end{eqnarray*}
+
+\end_inset
+
+y en el límite micromagnético
+\begin_inset Formula 
+\begin{eqnarray}
+\mathcal{H}_{\text{DM}} & \underset{\Delta V\rightarrow0}{=} & -\frac{4D_{z}}{\Delta z\Delta y}\frac{S^{2}}{M_{s}^{2}}\int\mathcal{L}_{xy}^{(x)}\,dV+\frac{4D_{x}}{\Delta x\Delta y}\frac{S^{2}}{M_{s}^{2}}\int\mathcal{L}_{yz}^{(z)}\,dV\nonumber \\
+ & = & \lambda_{\text{DM}}^{(1)}\int\mathcal{L}_{yx}^{(x)}\,dV+\lambda_{\text{DM}}^{(2)}\int\mathcal{L}_{yz}^{(z)}\,dV,\label{eq:bcc110-HDM}
+\end{eqnarray}
+
+\end_inset
+
+donde 
+\begin_inset Formula $\lambda_{\text{DM}}^{(1)}=4D_{z}S^{2}/(\Delta z\Delta y\,M_{s}^{2})$
+\end_inset
+
+ y 
+\begin_inset Formula $\lambda_{\text{DM}}^{(2)}=4D_{x}S^{2}/(\Delta x\Delta y\,M_{s}^{2})$
+\end_inset
+
+.
+ En este caso, 
+\begin_inset Formula $\Delta x$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta y$
+\end_inset
+
+ y 
+\begin_inset Formula $\Delta z$
+\end_inset
+
+, representan la mitad de las constantes de la red en las direcciones correspond
+ientes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Udvardi2009,Qian2001"
+literal "true"
+
+\end_inset
+
+.
+ Con nuestras aproximaciones, sólo sería relevante el primer término de
+ esta expresión.
+ Si quisiéramos integrar el siguiente vecino más cercano, tendríamos que
+ hacer un cálculo similar al del arreglo bcc(001), sólo cambiarían las constante
+s de la red, debido a que las direcciones de los vectores de Dzyaloshinskii
+ siguen la misma tendencia 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Udvardi2009"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Estudios recientes, han sido capaces de predecir algunos valores teóricos
+ de los vectores de Dzyaloshinskii con cálculos de primeros principios en
+ Fe/W(110) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bergqvist2013,Udvardi2009"
+literal "true"
+
+\end_inset
+
+, pero, al parecer, la precisión de las magnitudes reportadas no es muy
+ elevada, debido a la complejidad de la teoría.
+\end_layout
+
+\begin_layout Section
+Susceptibilidades dinámicas
+\end_layout
+
+\begin_layout Standard
+Así como en el caso de la relación de dispersión, usamos directamente la
+ expresión de la absorción (ecuaciones 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:imaginary-part-absorption"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:xi-absorcion"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Lambda-absorcion"
+
+\end_inset
+
+).
+ Ahora, podemos aproximar 
+\begin_inset Formula $1+g^{2}\approx1$
+\end_inset
+
+ (valores típicos de 
+\begin_inset Formula $g$
+\end_inset
+
+ son del orden de 0.01), para así obtener una expresión más reducida para
+ la absorción:
+\begin_inset Formula 
+\begin{equation}
+\Im\left[S_{XX}(\mathbf{k},\Omega)\right]=\frac{\gamma M_{s}\left(\gamma\Lambda(\mathbf{k})\mathcal{W}_{Y}(\mathbf{k})-g\Omega\xi(\mathbf{k})\right)}{\xi(\mathbf{k})^{2}+\Lambda(\mathbf{k})^{2}},
+\end{equation}
+
+\end_inset
+
+teniendo en cuenta que
+\begin_inset Formula 
+\[
+\Im[\mathcal{W}_{XY}]=-2M_{s}k\lambda_{\text{DM}}\cos\phi_{\mathbf{k}}\cos\phi_{M}
+\]
+
+\end_inset
+
+y
+\begin_inset Formula 
+\[
+\xi(\mathbf{k})=\Omega(\mathbf{k})^{2}-\Omega^{2}+2\gamma\Im[\mathcal{W}_{XY}](\Omega(\mathbf{k})-\Omega).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La idea general que podemos obtener de la expresión anterior, es que las
+ IDM no modifican el ancho de la línea de absorción.
+ En el caso de resonancia ferromagnética (FMR), es decir, la excitación
+ de ondas de espín con vectores de onda nulos (
+\begin_inset Formula $\mathbf{k}=0$
+\end_inset
+
+), el término de DM no modifica el ancho de línea de la resonancia, ya que
+ éste no depende de la magnitud de la constante de DM.
+ En vez de eso, las IDM simplemente producen un corrimiento del campo de
+ resonancia, pero para un 
+\begin_inset Formula $k$
+\end_inset
+
+ no nulo, debido a que 
+\begin_inset Formula $\Im[\mathcal{W}_{XY}]\propto k$
+\end_inset
+
+.
+ De esta forma, el corrimiento de frecuencia también es nulo para el caso
+ de FMR.
+ Estos resultados se expondrán en la siguiente sección a través de las Figuras
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:absorcion-freq"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:absorcion-Hres"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Resultados para un sistema de Siliciuro de Manganeso (MnSi)
+\end_layout
+
+\begin_layout Standard
+Para ilustrar nuestros resultados haremos uso de la información expresada
+ en la referencia 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Karhu2012"
+literal "true"
+
+\end_inset
+
+ para un film delgado de MnSi, el cual es un helimagneto bajo una temperatura
+ crítica cercana a los 29 K.
+ Este sistema posee una anisotropía uniaxial con un plano fácil paralelo
+ al plano de la película, por lo que, en nuestra notación, tenemos 
+\begin_inset Formula $K_{\text{u}}>0$
+\end_inset
+
+ para la constante de anisotropía.
+ Como estamos considerando en la teoría un sistema saturado, necesitamos
+ un campo magnético externo lo suficientemente fuerte para que el sistema
+ pierda la configuración quiral de 
+\begin_inset Formula $\mathbf{M}$
+\end_inset
+
+, la cual es característica de estos sistemas de MnSi.
+ Para este material, el campo es del orden de 5400 Oe para un film de 11.5
+ nm de espesor.
+ 
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/MnSi-dispersion.pdf
+	scale 135
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Relación de dispersión de las ondas de espín para una lámina magnética ultradelg
+ada de MnSi, con 11.5 nm de espesor, la cual se encuentra saturada en el
+ plano (
+\begin_inset Formula $\phi_{M}=0$
+\end_inset
+
+) con un campo magnético externo de 5400 Oe.
+ Este sistema posee una magnetización de saturación de 
+\begin_inset Formula $163$
+\end_inset
+
+ Oe, una rigidez de intercambio (exchange stiffness) de 
+\begin_inset Formula $D=7.01226\times10^{4}$
+\end_inset
+
+ Oe
+\begin_inset Formula $\times$
+\end_inset
+
+nm
+\begin_inset Formula $^{2}$
+\end_inset
+
+, una anisotropía uniaxial con una constante 
+\begin_inset Formula $K_{\text{u}}=330\times10^{3}$
+\end_inset
+
+ 
+\begin_inset Formula $\text{erg/cm}^{3}$
+\end_inset
+
+, lo cual corresponde a un campo de anisotropía de 
+\begin_inset Formula $H_{\text{u}}=471$
+\end_inset
+
+ Oe de amplitud; y una constante giromagnética (gyromagnetic ratio) de 
+\begin_inset Formula $\gamma=0.0185555$
+\end_inset
+
+ GHz/Oe.
+ La línea continua corresponde al sistema con una constante de DM de 
+\begin_inset Formula $\lambda_{\text{DM}}=0.658$
+\end_inset
+
+ nm de magnitud, mientras que la línea intermitente se refiere al sistema
+ sin IDM, es decir, con 
+\begin_inset Formula $\lambda_{\text{DM}}=0$
+\end_inset
+
+ nm.
+ En el recuadro se ilustra la asimetría 
+\begin_inset Formula $\Delta f$
+\end_inset
+
+ para los parámetros recién citados, la cual está dada por la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:asymmetry-mnsi"
+
+\end_inset
+
+ y corresponde a la del grupo puntual 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:dispersion-mnsi"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Acá verificamos que, efectivamente, hay un quiebre de la simetría de la
+ relación de dispersión de las ondas de espín en presencia de las IDM.
+ Esta asimetría, que estimamos como la diferencia entre el espectro de vectores
+ de onda opuestos (ecuaciones 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:asymmetry"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:asymmetry-mnsi"
+
+\end_inset
+
+) 
+\begin_inset Formula $\Delta f$
+\end_inset
+
+, es la que graficamos en el recuadro de la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dispersion-mnsi"
+
+\end_inset
+
+ y es lineal en el vector de onda 
+\begin_inset Formula $k$
+\end_inset
+
+, con una pendiente que depende de la constante de DM 
+\begin_inset Formula $\lambda_{\text{DM}}$
+\end_inset
+
+, la magnetización de saturación 
+\begin_inset Formula $M_{s}$
+\end_inset
+
+, la constante giromagnética 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ y los ángulos 
+\begin_inset Formula $\phi_{M}$
+\end_inset
+
+ y 
+\begin_inset Formula $\phi_{\mathbf{k}}$
+\end_inset
+
+.
+ La asimetría en ausencia de las IDM es claramente cero.
+\end_layout
+
+\begin_layout Standard
+Además de la relación de dispersión, hemos analizado el espectro de absorción
+ del sistema de MnSi especificado anteriormente, el cual se encuentra saturado
+ con un campo de 5400 Oe.
+ En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:absorcion-freq"
+
+\end_inset
+
+ ilustramos la dependencia de la parte imaginaria de la susceptibilidad
+ como función de la frecuencia para distintos valores de la magnitud del
+ vector de onda 
+\begin_inset Formula $k$
+\end_inset
+
+ y para vectores paralelos y antiparalelos a 
+\begin_inset Formula $\mathbf{M}$
+\end_inset
+
+.
+ Podemos observar que con valores cada vez mayores de 
+\begin_inset Formula $k$
+\end_inset
+
+, el corrimiento de la frecuencia de resonancia entre vectores de onda opuestos
+ es mayor, lo cual se relaciona con el incremento lineal de la asimetría
+ en la frecuencia de los modos de ondas de espín.
+ Las líneas cortadas de la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:absorcion-freq"
+
+\end_inset
+
+ (las cuales corresponden a 
+\begin_inset Formula $k=2\times10^{5}$
+\end_inset
+
+ cm
+\begin_inset Formula $^{-1}$
+\end_inset
+
+), se encuentran desplazadas a la izquierda de la curva que representa 
+\begin_inset Formula $k=0$
+\end_inset
+
+, debido a la bajada inicial que tiene la curva de dispersión, como se muestra
+ en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dispersion-mnsi"
+
+\end_inset
+
+.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/ImSxx-k.pdf
+	scale 140
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Espectro de absorción (parte imaginaria de la función respuesta) como función
+ de la frecuencia 
+\begin_inset Formula $f$
+\end_inset
+
+ para el sistema de MnSi especificado en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dispersion-mnsi"
+
+\end_inset
+
+, con una constante de damping de 
+\begin_inset Formula $g=0.01$
+\end_inset
+
+, una constante de DM de 
+\begin_inset Formula $\lambda_{\text{DM}}=0.658$
+\end_inset
+
+ nm y diferentes magnitudes de los vectores de onda 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ Las líneas gruesas, en cada caso, corresponden a vectores de onda con 
+\begin_inset Formula $\phi_{\mathbf{k}}=0$
+\end_inset
+
+ y las más delgadas, a los vectores opuestos, o sea, con 
+\begin_inset Formula $\phi_{\mathbf{k}}=\pi$
+\end_inset
+
+.
+ La línea sólida se refiere al caso con vector de onda nulo (FMR).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:absorcion-freq"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:absorcion-Hres"
+
+\end_inset
+
+a, estudiamos la dependencia del espectro de absorción de microondas con
+ la magnitud del campo externo, sometido a un campo de microondas de 23.5
+ GHz, que corresponde a un campo resonante en un rango cercano al necesario
+ para saturar la muestra, junto con su derivada respecto al campo en la
+ Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:absorcion-Hres"
+
+\end_inset
+
+b.
+ En este caso se aprecia que, para 
+\begin_inset Formula $k=6\times10^{5}$
+\end_inset
+
+ 
+\begin_inset Formula $\text{cm}^{-1}$
+\end_inset
+
+, la energía de DM induce un corrimiento de la línea de absorción respecto
+ al caso sin IDM y el cual es dependiente de la dirección del vector de
+ onda, de forma que, si 
+\begin_inset Formula $\mathbf{k}$
+\end_inset
+
+ es paralelo a 
+\begin_inset Formula $\mathbf{M}$
+\end_inset
+
+, el campo de resonancia disminuye; y si 
+\begin_inset Formula $\mathbf{k}$
+\end_inset
+
+ es antiparalelo a 
+\begin_inset Formula $\mathbf{M}$
+\end_inset
+
+, el campo de resonancia aumenta.
+ En ambos casos, con los parámetros de la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:absorcion-Hres"
+
+\end_inset
+
+, este corrimiento (respecto al caso de 
+\begin_inset Formula $\lambda_{\text{DM}}=0$
+\end_inset
+
+) es de aproximadamente 12 Oe, lo cual se ve más claro en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:absorcion-Hres"
+
+\end_inset
+
+b.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/ImSxx-double.pdf
+	scale 120
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Espectro de absorción (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:absorcion-Hres"
+
+\end_inset
+
+a) como función del campo aplicado 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ para el sistema de MnSi especificado en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dispersion-mnsi"
+
+\end_inset
+
+, con un vector de onda de magnitud 
+\begin_inset Formula $k=6\times10^{5}$
+\end_inset
+
+ cm
+\begin_inset Formula $^{-1}$
+\end_inset
+
+ y una frecuencia fija de 23.5 GHz.
+ Las curvas punteadas (la cortada y la con puntos) corresponden al sistema
+ con IDM y vectores de onda opuestos, mientras que la línea continua se
+ refiere al caso con 
+\begin_inset Formula $\lambda_{\text{DM}}=0$
+\end_inset
+
+.
+ En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:absorcion-Hres"
+
+\end_inset
+
+b, mostramos la derivada de esta función 
+\begin_inset Formula $\Im[S_{XX}]$
+\end_inset
+
+ respecto al campo aplicado para especificar mejor el punto donde se encuentra
+ el campo de resonancia.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:absorcion-Hres"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para cuantificar el corrimiento del campo de resonancia, respecto a otros
+ valores del vector de onda, se ha graficado en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:absorcion-Hres-kdif"
+
+\end_inset
+
+a su comportamiento como función de 
+\begin_inset Formula $k$
+\end_inset
+
+ para dos frecuencias, 23.5 y 24 Ghz.
+ Acá observamos que inicialmente hay un aumento del campo de resonancia
+ y luego éste comienza a decrecer para valores más grandes de 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ En las dos situaciones, observamos que las curvas punteadas, que corresponden
+ a los casos con IDM (con una constante 
+\begin_inset Formula $\lambda_{\text{DM}}=0.658$
+\end_inset
+
+ nm) y con vectores de onda opuestos, se van separando cada vez más de la
+ línea continua, que corresponde al caso sin IDM (
+\begin_inset Formula $\lambda_{\text{DM}}=0$
+\end_inset
+
+).
+ Esta tendencia es lineal y se especifica en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:absorcion-Hres-kdif"
+
+\end_inset
+
+b, donde graficamos la diferencia entre el campo resonante, a una frecuencia
+ de 23.5 GHz, entre vectores paralelos a 
+\begin_inset Formula $\mathbf{M}$
+\end_inset
+
+ (o sea, con 
+\begin_inset Formula $\phi_{\mathbf{k}}=0$
+\end_inset
+
+ y asociado a la línea discontinua de la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:absorcion-Hres-kdif"
+
+\end_inset
+
+a), denotado por 
+\begin_inset Formula $H_{\text{res}}^{(0)}$
+\end_inset
+
+, y el de vectores antiparalelos a 
+\begin_inset Formula $\mathbf{M}$
+\end_inset
+
+ (
+\begin_inset Formula $\phi_{\mathbf{k}}=\pi$
+\end_inset
+
+ y línea discontinua con puntos), que llamamos 
+\begin_inset Formula $H_{\text{res}}^{(\pi)}$
+\end_inset
+
+, la cual comienza a incrementar para mayores valores de 
+\begin_inset Formula $k$
+\end_inset
+
+, como en el caso de la dependencia con la frecuencia discutido más arriba.
+\end_layout
+
+\begin_layout Standard
+Para los casos de dependencia en la frecuencia y en el campo magnético,
+ los efectos de corrimiento en frecuencia y en campo de resonancia, en el
+ espectro de absorción, debieran ser más apreciables para constantes de
+ DM de mayor magnitud, lo cual podría observarse en películas de pocas monocapas
+, ya que presentan baja simetría en sus superficies.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Hres-double.pdf
+	scale 110
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráficas del campo de resonancia (
+\begin_inset Formula $H_{\text{res}}$
+\end_inset
+
+) como función de la magnitud del vector de onda 
+\begin_inset Formula $k$
+\end_inset
+
+ para la lámina delgada de MnSi especificada en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dispersion-mnsi"
+
+\end_inset
+
+.
+ En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:absorcion-Hres-kdif"
+
+\end_inset
+
+a, las curvas sólidas representan al sistema sin IDM, mientras que las líneas
+ discontinuas, la cortada y la punto-segmentada, corresponden al caso con
+ 
+\begin_inset Formula $\lambda_{\text{DM}}=0.658$
+\end_inset
+
+ nm, pero para vectores de onda opuestos (
+\begin_inset Formula $\phi_{\mathbf{k}}=0$
+\end_inset
+
+ y 
+\begin_inset Formula $\phi_{\mathbf{k}}=\pi$
+\end_inset
+
+ respectivamente).
+ Además, las líneas gruesas se refieren al sistema bajo un campo de microondas
+ de 23.5 GHz de frecuencia, en tanto que las líneas más delgadas son para
+ una frecuencia de 24 GHz.
+ La Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:absorcion-Hres-kdif"
+
+\end_inset
+
+b muestra la diferencia entre los campos de resonancia de vectores paralelos
+ (
+\begin_inset Formula $H_{\text{res}}^{(0)}$
+\end_inset
+
+) y antiparalelos (
+\begin_inset Formula $H_{\text{res}}^{(\pi)}$
+\end_inset
+
+) a la magnetización 
+\begin_inset Formula $\mathbf{M}$
+\end_inset
+
+, para el sistema con IDM y una frecuencia de 23.5 GHz.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:absorcion-Hres-kdif"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Espectro de absorción para un sistema de Fe/W(110)
+\end_layout
+
+\begin_layout Standard
+Otro sistema que es posible analizar, es el de Fe en W(110), cuya relación
+ para la interacción de DM la obtuvimos en la Sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Arreglo-bcc(110)"
+
+\end_inset
+
+.
+ Este tipo de sistemas con interacción de intercambio anisotrópico, consiste
+ en pocas monocapas de Fe.
+ 
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/FeW110.pdf
+	scale 120
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Relación de dispersión de las ondas de espín para una lámina de pocas monocapas
+ de Fe/W(110), con 
+\begin_inset Formula $d=1$
+\end_inset
+
+ nm de espesor y una constante de red 
+\begin_inset Formula $a=3.165$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+AA
+\end_layout
+
+\end_inset
+
+; la cual se encuentra saturada en el plano (
+\begin_inset Formula $\phi_{M}=0$
+\end_inset
+
+) con un campo magnético externo de 3000 Oe.
+ Este sistema posee una magnetización de saturación de 
+\begin_inset Formula $1700$
+\end_inset
+
+ Oe, una rigidez de intercambio de 
+\begin_inset Formula $D=2.5823\times10^{5}$
+\end_inset
+
+ Oe
+\begin_inset Formula $\times$
+\end_inset
+
+nm
+\begin_inset Formula $^{2}$
+\end_inset
+
+ y una constante giromagnética de 
+\begin_inset Formula $\gamma=0.0185555$
+\end_inset
+
+ GHz/Oe.
+ El campo de anisotropía uniaxial en el plano, lo hemos estimado como 
+\begin_inset Formula $H_{\text{u}}=10000$
+\end_inset
+
+ Oe de amplitud.
+ La línea continua corresponde al sistema con una constante de DM de 
+\begin_inset Formula $\lambda_{\text{DM}}^{(1)}=2.8$
+\end_inset
+
+ nm de magnitud (ver ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:bcc110-HDM"
+
+\end_inset
+
+), mientras que la línea intermitente se refiere al sistema sin IDM, es
+ decir, con 
+\begin_inset Formula $\lambda_{\text{DM}}^{(1)}=0$
+\end_inset
+
+ nm; ambas con los ángulos 
+\begin_inset Formula $\phi_{\mathbf{k}}=\pi/2$
+\end_inset
+
+ y 
+\begin_inset Formula $\phi_{-\mathbf{k}}=\pi/2+\pi$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:dispersion-FeW110"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Haciendo referencia a los trabajos reportados recientemente 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Udvardi2009,Kh.Zakeri2010,Kh.Zakeri2011"
+literal "true"
+
+\end_inset
+
+, podemos ver que las constantes de DM asociadas son de mayor magnitud y
+ las asimetrías se aprecian en dirección perpendicular a la dirección de
+ la magnetización de saturación de nuestra referencia.
+ En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dispersion-FeW110"
+
+\end_inset
+
+, ilustramos la relación de dispersión, donde se aprecia una asimetría mucho
+ mayor que la del sistema de MnSi analizado anteriormente, lo cual se puede
+ ver directamente en el rango de frecuencias donde está situada la curva
+ con las IDM.
+ En este caso, estimamos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Udvardi2009"
+literal "true"
+
+\end_inset
+
+ la constante de DM como 
+\begin_inset Formula $\lambda_{\text{DM}}^{(1)}=2.8$
+\end_inset
+
+ nm (ver ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:bcc110-HDM"
+
+\end_inset
+
+; el término con 
+\begin_inset Formula $\lambda_{\text{DM}}^{(2)}$
+\end_inset
+
+ no lo consideramos porque solo aporta un término lineal en la derivada
+ espacial de 
+\begin_inset Formula $m_{Y}$
+\end_inset
+
+ que se anula con la transformada de Fourier), el campo de saturación lo
+ hemos fijado en 3000 Oe y la onda de espín se mide en un ángulo 
+\begin_inset Formula $\phi_{\mathbf{k}}=\pi/2$
+\end_inset
+
+ (para vectores de onda 
+\begin_inset Formula $\mathbf{k}$
+\end_inset
+
+ en la dirección 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+; en la dirección opuesta, debemos usar 
+\begin_inset Formula $\phi_{-\mathbf{k}}=\pi/2+\pi$
+\end_inset
+
+), que es donde existe mayor influencia de la interacción debido a que el
+ invariante de Lifshitz es similar al de la clase de simetría 
+\begin_inset Formula $C_{nv}$
+\end_inset
+
+ y la asimetría tendrá una expresión como la de la Tabla 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Asymmetries"
+
+\end_inset
+
+, proporcional a 
+\begin_inset Formula $\sin\phi_{\mathbf{k}}$
+\end_inset
+
+.
+ Además, el sistema posee una anisotropía uniaxial en el plano en la dirección
+ 
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+, por lo que debemos utilizar el resultado del Apéndice 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Anisotropia-en-el-plano"
+
+\end_inset
+
+ y reemplazar según corresponda en las ecuaciones 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:coeficientes-DMI"
+
+\end_inset
+
+.
+ A diferencia del sistema de MnSi, podemos ver que acá no existe una pendiente
+ negativa inicial de la curva de la relación de dispersión, la cual es causada
+ por los campos dipolares que genera la magnetización dinámica 
+\begin_inset Formula $\mathbf{m}$
+\end_inset
+
+, aportando un término proporcional a 
+\begin_inset Formula $\mathbf{k}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Arias1999,Landeros2008"
+literal "true"
+
+\end_inset
+
+.
+ Esto porque, para la película de Fe/W(110), las ondas de espín las estamos
+ analizando en la dirección perpendicular a la magnetización 
+\begin_inset Formula $\mathbf{M}$
+\end_inset
+
+ en el plano, es decir, las observamos en 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+, y los efectos dipolares de 
+\begin_inset Formula $\mathbf{m}$
+\end_inset
+
+ sólo se aprecian hasta cierto ángulo ángulo crítico que forma el vector
+ de onda 
+\begin_inset Formula $\mathbf{k}$
+\end_inset
+
+ respecto a la magnetización 
+\begin_inset Formula $\mathbf{M}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Arias1999"
+literal "true"
+
+\end_inset
+
+, de manera que, en este caso, la pendiente inicial será siempre positiva.
+\end_layout
+
+\begin_layout Standard
+También, hemos graficado en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:absorption-FeW110-1"
+
+\end_inset
+
+, el espectro de absorción de la lámina de Fe/W(110), utilizando la expresión
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:imaginary-part-absorption"
+
+\end_inset
+
+ con el invariante de Lifshitz correspondiente a esta geometría y los parámetros
+ de la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dispersion-FeW110"
+
+\end_inset
+
+.
+ La resonancia (máxima absorción) ocurre justamente en los valores de la
+ curva de la relación de dispersión, donde la frecuencia es igual a la de
+ los modos normales del sistema.
+ 
+\end_layout
+
+\begin_layout Standard
+En caso de que graficáramos los espectros de absorción con dependencia en
+ la frecuencia o campo externo, veríamos los corrimientos en frecuencias
+ y campos resonantes de las curvas, para determinados vectores de onda,
+ mucho más pronunciados, debido a la mayor magnitud de la constante de DM.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/FeW-abs.pdf
+	scale 110
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Espectro de absorción para una lámina de Fe/W(110) con los parámetros utilizados
+ en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dispersion-FeW110"
+
+\end_inset
+
+, una constante de DM de 
+\begin_inset Formula $\lambda_{\text{DM}}^{(1)}=2.8$
+\end_inset
+
+ nm y una constante de amortiguamiento de 
+\begin_inset Formula $g=0.1$
+\end_inset
+
+, con la onda de espín en dirección perpendicular a la magnetización, es
+ decir 
+\begin_inset Formula $\phi_{\mathbf{k}}=\pi/2$
+\end_inset
+
+ y 
+\begin_inset Formula $\phi_{-\mathbf{k}}=\pi/2+\pi$
+\end_inset
+
+ según corresponda a las direcciones paralelas y antiparalelas a 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:absorption-FeW110-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusiones
+\end_layout
+
+\begin_layout Standard
+En esta investigación, hemos demostrado la influencia que tienen las interaccion
+es de Dzyaloshinskii-Moriya en el espectro de ondas de espín de películas
+ ferromagnéticas delgadas, saturadas con un campo magnético.
+ En estos sistemas, hemos calculado la relación de dispersión para diferentes
+ clases de simetría cristalográficas (que dan cuenta de los distintos materiales
+ de los que podrían estar conformados estos magnetos); además del tensor
+ de susceptibilidad dinámica en la aproximación de respuesta lineal.
+ En el caso de la relación de dispersión, hemos comprobado la existencia
+ de una asimetría respecto a la inversión del vector de onda, lo cual ha
+ sido reportado en forma experimental 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kh.Zakeri2010"
+literal "true"
+
+\end_inset
+
+.
+ También, hemos predicho que no existe asimetría el caso de que la magnetización
+ esté orientada perpendicular al plano de la lámina, lo que concuerda con
+ resultados del formalismo de Costa et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Costa2010"
+literal "true"
+
+\end_inset
+
+.
+ Respecto a las asimetrías, éstas se han cuantificado a través de la diferencia
+ en frecuencia entre vectores de onda opuestos, 
+\begin_inset Formula $\Delta f(\mathbf{k})=f(\mathbf{k})-(-\mathbf{k})$
+\end_inset
+
+ , y hemos resumido en la Tabla 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Asymmetries"
+
+\end_inset
+
+ estas expresiones para diversos grupos puntuales.
+ Estos resultados son analíticos, y sería interesante que fueran comparados
+ con futuros experimentos en el área, de los cuales se podrían extraer datos
+ relevantes, como las constantes de DM 
+\begin_inset Formula $\lambda_{\text{DM}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Otro punto a destacar en nuestro formalismo es que, en el caso del sistema
+ saturado, las IDM no afectan a la respuesta de Resonancia Ferromagnética
+ (
+\begin_inset Formula $\mathbf{k}=0$
+\end_inset
+
+).
+ Esto se puede explicar como señalamos a continuación.
+ El término de energía de las IDM es cuadrático en las componentes de la
+ magnetización dinámica, por lo que no modifican la condición de equilibrio
+ del estado de magnetización uniforme, que surge de los términos lineales
+ en 
+\begin_inset Formula $\mathbf{m}$
+\end_inset
+
+.
+ Específicamente, los términos lineales de la energía de DM, se anulan debido
+ a la linealidad en las primeras derivadas espaciales de 
+\begin_inset Formula $\mathbf{m}$
+\end_inset
+
+.
+ A su vez, los términos cuadráticos también son lineales en estas derivadas,
+ lo que en el espacio de Fourier, se traduce en una linealidad en el vector
+ de onda 
+\begin_inset Formula $\mathbf{k}$
+\end_inset
+
+, demostrando lo que habíamos establecido inicialmente, que en FMR no hay
+ influencia de las IDM.
+\end_layout
+
+\begin_layout Standard
+Es importante mencionar que, en caso de que quisiéramos tomar en cuenta
+ configuraciones quirales, lo cual es típico en estos sistemas, el problema
+ se volvería más complicado, debido a las siguientes razones: (i) sería
+ necesario volver a calcular la energía dipolar, lo cual no es una tarea
+ trivial; (ii) tendríamos que considerar otra condición de equilibrio, en
+ caso de tener, por ejemplo, una hélice como estado inicial o un arreglo
+ de Skyrmions 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Karhu2012,Tonomura2012"
+literal "true"
+
+\end_inset
+
+.
+ Entonces, el hecho de tener un estado uniforme, saturando la magnetización,
+ nos permite una mejor comparación entre la teoría y los experimentos, ya
+ que no estamos asumiendo posibles estados de equilibrio.
+ Esto nos posibilita la obtención de expresiones analíticas sencillas para
+ describir el espectro de ondas de espín del ferromagneto.
+\end_layout
+
+\begin_layout Standard
+Además de obtener efectos en la relación de dispersión, hemos conseguido
+ deducir expresiones para las funciones respuesta y explicar la influencia
+ de las IDM en el espectro de absorción.
+ De acá, hemos logrado observar la existencia de un corrimiento en las frecuenci
+as y en los campos de resonancia del sistema, para vectores de onda opuestos
+ y no-nulos (
+\begin_inset Formula $k\neq0$
+\end_inset
+
+).
+ Este fenómeno se incrementa en el caso de que la magnitudes del vector
+ de onda y de las constantes de DM sean mayores.
+ 
+\end_layout
+
+\begin_layout Standard
+Por último, si quisiéramos describir un sistema con un invariante distinto
+ a los que se han propuesto en la lista de clases de simetría, y cuya geometría
+ cristalográfica sea conocida, hemos indicado un método para poder calcularlo
+ apropiadamente en el límite micromagnético.
+ Para esto, es importante saber bien cuáles son los vectores de Dzyaloshinskii
+ involucrados en el arreglo, los que no siempre son fáciles de obtener,
+ y van de acuerdo a la estructura del material bajo estudio.
+\end_layout
+
+\begin_layout Chapter
+Apéndices
+\end_layout
+
+\begin_layout Section
+Energía de Intercambio
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Energía-de-Intercambio"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Teníamos
+\begin_inset Formula 
+\[
+\mathcal{H}_{\text{ex}}\simeq-S^{2}J\sum_{i,j}\left(1-\frac{\phi_{ij}^{2}}{2}\right).
+\]
+
+\end_inset
+
+Con la regla del coseno, 
+\begin_inset Formula 
+\[
+\left|\mathbf{S}_{i}\right|^{2}+\left|\mathbf{S}_{j}\right|^{2}-2\left|\mathbf{S}_{i}\right|\left|\mathbf{S}_{j}\right|\cos\phi_{ij}=\left|\mathbf{S}_{i}-\mathbf{S}_{j}\right|^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2S^{2}-2S^{2}\left(1-\frac{\phi_{ij}^{2}}{2}+\cdots\right)=S^{2}\left|\hat{s}_{i}-\hat{s}_{j}\right|^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\hat{s}_{i}-\hat{s}_{j}\right|\simeq\phi_{ij}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Posteriormente, debemos realizar la suma en 
+\begin_inset Formula $j$
+\end_inset
+
+, así que expandemos 
+\begin_inset Formula $\hat{s}_{j}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\hat{s}_{j} & = & \hat{s}\left(\mathbf{x}_{i}+\boldsymbol{\epsilon}_{j}\right)\\
+ & = & \hat{s}\left(x_{i}+\epsilon_{j}^{(x)},y_{i}+\epsilon_{j}^{(y)},z_{i}+\epsilon_{j}^{(z)}\right)\\
+ & = & \hat{s}(\mathbf{x}_{i})+\frac{\partial\hat{s}(\mathbf{x}_{i})}{\partial x}\epsilon_{j}^{(x)}+\frac{\partial\hat{s}(\mathbf{x}_{i})}{\partial y}\epsilon_{j}^{(y)}+\frac{\partial\hat{s}(\mathbf{x}_{i})}{\partial z}\epsilon_{j}^{(z)}+\frac{\partial^{2}\hat{s}(\mathbf{x}_{i})}{\partial x\partial y}\epsilon_{j}^{(x)}\epsilon_{j}^{(y)}+\cdots\\
+ & \simeq & \hat{s}(\mathbf{x}_{i})+\left(\boldsymbol{\epsilon}_{j}\cdot\boldsymbol{\nabla}\right)\hat{s}(\mathbf{x}_{i})\\
+ & = & \hat{s}_{i}+\left(\boldsymbol{\epsilon}_{j}\cdot\boldsymbol{\nabla}\right)\hat{s}_{i}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por último, debemos realizar una suma para una estructura cristalina en
+ particular.
+ Consideremos un arreglo BCC como ejemplo (ver Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Arreglo-BCC"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/BCC-lattice.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arreglo BCC con los respectivos vectores primitivos y el sistema de coordenadas
+ utilizado en los cálculos.
+ Cada átomo tiene 8 vecinos y el número de átomos por sitio es igual a 2.
+ La constante de la red se denota por 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Arreglo-BCC"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los vectores primitivos en esta estructura son
+\begin_inset Formula 
+\[
+\boldsymbol{\epsilon}_{1}=\frac{a}{2}\left(\hat{x}+\hat{y}-\hat{z}\right)\qquad\qquad\boldsymbol{\epsilon}_{2}=\frac{a}{2}\left(-\hat{x}+\hat{y}+\hat{z}\right)\qquad\qquad\boldsymbol{\epsilon}_{3}=\frac{a}{2}\left(\hat{x}-\hat{y}+\hat{z}\right)
+\]
+
+\end_inset
+
+con 
+\begin_inset Formula $a$
+\end_inset
+
+ como la constante de la red.
+ Si nos posicionamos en el sitio central de la celda, podemos observar que
+ existen 8 vecinos cercanos para esta red, cuyas posiciones, son combinaciones
+ similares a las de los vectores primitivos, como se muestra en la Figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Arreglo-BCC"
+
+\end_inset
+
+.
+ Así, tenemos: 
+\begin_inset Formula $\boldsymbol{\epsilon}_{4}=\frac{a}{2}\left(\hat{x}-\hat{y}-\hat{z}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\boldsymbol{\epsilon}_{5}=\frac{a}{2}\left(-\hat{x}-\hat{y}+\hat{z}\right)$
+\end_inset
+
+, etc.
+ Reemplazando en la suma, nos queda
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{H}_{\text{ex}} & = & \frac{JS^{2}}{2}\sum_{i}\frac{a^{2}}{4M_{s}^{2}}\biggl\{\left(\left[\hat{x}+\hat{y}-\hat{z}\right]\cdot\boldsymbol{\nabla}\mathbf{M}_{i}\right)^{^{2}}+\left(\left[-\hat{x}+\hat{y}+\hat{z}\right]\cdot\boldsymbol{\nabla}\mathbf{M}_{i}\right)^{^{2}}\\
+ &  & \qquad\qquad+\left(\left[\hat{x}-\hat{y}+\hat{z}\right]\cdot\boldsymbol{\nabla}\mathbf{M}_{i}\right)^{^{2}}+\left(\left[\hat{x}-\hat{y}-\hat{z}\right]\cdot\boldsymbol{\nabla}\mathbf{M}_{i}\right)^{^{2}}\\
+ &  & \qquad\qquad+\left(\left[-\hat{x}-\hat{y}+\hat{z}\right]\cdot\boldsymbol{\nabla}\mathbf{M}_{i}\right)^{^{2}}+\left(\left[-\hat{x}+\hat{y}-\hat{z}\right]\cdot\boldsymbol{\nabla}\mathbf{M}_{i}\right)^{^{2}}\\
+ &  & \qquad\qquad+\left(\left[-\hat{x}-\hat{y}-\hat{z}\right]\cdot\boldsymbol{\nabla}\mathbf{M}_{i}\right)^{^{2}}+\left(\left[\hat{x}+\hat{y}+\hat{z}\right]\cdot\boldsymbol{\nabla}\mathbf{M}_{i}\right)^{^{2}}\biggr\}.
+\end{eqnarray*}
+
+\end_inset
+
+Notemos ahora, por ejemplo, que
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(\left[\hat{x}+\hat{y}-\hat{z}\right]\cdot\boldsymbol{\nabla}\mathbf{M}_{i}\right)^{^{2}} & = & \left(\nabla_{x}\mathbf{M}_{i}+\nabla_{y}\mathbf{M}_{i}-\nabla_{z}\mathbf{M}_{i}\right)^{2}\\
+ & = & \left(\left[\nabla_{x}M_{i}^{(x)}+\nabla_{y}M_{i}^{(x)}-\nabla_{z}M_{i}^{(x)}\right]\hat{x}\right.\\
+ &  & +\left[\nabla_{x}M_{i}^{(y)}+\nabla_{y}M_{i}^{(y)}-\nabla_{z}M_{i}^{(y)}\right]\hat{y}\\
+ &  & \left.+\left[\nabla_{x}M_{i}^{(z)}+\nabla_{y}M_{i}^{(z)}-\nabla_{z}M_{i}^{(z)}\right]\hat{z}\right)^{2}\\
+ & = & \biggl[\left(\nabla_{x}M_{i}^{(x)}\right)^{2}+\left(\nabla_{y}M_{i}^{(x)}\right)^{2}+\left(\nabla_{z}M_{i}^{(x)}\right)^{2}\\
+ &  & +2\left(\nabla_{x}M_{i}^{(x)}\right)\left(\nabla_{y}M_{i}^{(x)}\right)-2\left(\nabla_{x}M_{i}^{(x)}\right)\left(\nabla_{z}M_{i}^{(x)}\right)\\
+ &  & -2\left(\nabla_{y}M_{i}^{(x)}\right)\left(\nabla_{z}M_{i}^{(x)}\right)\biggr]\\
+ &  & +\biggl[\text{términos con }M_{i}^{(y)}\text{ y }M_{i}^{(z)}\biggr]
+\end{eqnarray*}
+
+\end_inset
+
+Centrémonos ahora sólo en los términos con 
+\begin_inset Formula $M_{i}^{(x)}$
+\end_inset
+
+, ya que para las otras componentes ocurrirá la misma simplificación.
+ En la expresión anterior, los dos términos negativos, son debidos al 
+\begin_inset Formula $-\hat{z}$
+\end_inset
+
+ de 
+\begin_inset Formula $\boldsymbol{\epsilon}_{1}$
+\end_inset
+
+ y al cuadrado que mezcla los sumandos.
+ Estos términos claramente se cancelarán con los del
+\begin_inset Formula 
+\[
+\left(\left[\hat{x}+\hat{y}+\hat{z}\right]\cdot\boldsymbol{\nabla}\mathbf{M}_{i}\right)^{^{2}},
+\]
+
+\end_inset
+
+ya que generan
+\begin_inset Formula 
+\[
+2\left(\nabla_{x}M_{i}^{(x)}\right)\left(\nabla_{y}M_{i}^{(x)}\right)+2\left(\nabla_{x}M_{i}^{(x)}\right)\left(\nabla_{z}M_{i}^{(x)}\right)+2\left(\nabla_{y}M_{i}^{(x)}\right)\left(\nabla_{z}M_{i}^{(x)}\right).
+\]
+
+\end_inset
+
+Así, formamos todos los pares que deben anularse (por ejemplo, se ve fácilmente
+ que se anulan los de 
+\begin_inset Formula $\boldsymbol{\epsilon}_{2}$
+\end_inset
+
+ con 
+\begin_inset Formula $\boldsymbol{\epsilon}_{3}$
+\end_inset
+
+) y efectivamente ocurre con todos los términos proporcionales a 2 en la
+ suma.
+ Como los cuadrados siempre serán positivos, son los únicos términos que
+ sobreviven, por lo que llegamos a
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{H}_{\text{ex}} & = & \frac{JS^{2}}{2}\frac{a^{2}}{4M_{s}^{2}}\sum_{i}\biggl\{8\left[\left(\nabla_{x}M_{i}^{(x)}\right)^{2}+\left(\nabla_{y}M_{i}^{(x)}\right)^{2}+\left(\nabla_{z}M_{i}^{(x)}\right)^{2}\right]\\
+ &  & \qquad\qquad+8\left[\left(\nabla_{x}M_{i}^{(y)}\right)^{2}+\left(\nabla_{y}M_{i}^{(y)}\right)^{2}+\left(\nabla_{z}M_{i}^{(y)}\right)^{2}\right]\\
+ &  & \qquad\qquad+8\left[\left(\nabla_{x}M_{i}^{(z)}\right)^{2}+\left(\nabla_{y}M_{i}^{(z)}\right)^{2}+\left(\nabla_{z}M_{i}^{(z)}\right)^{2}\right]\biggr\}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notando que
+\begin_inset Formula 
+\[
+\left(\boldsymbol{\nabla}M_{\alpha}\right)^{2}=\left(\frac{\partial M_{i}^{(\alpha)}}{\partial x}\right)^{2}+\left(\frac{M_{i}^{(\alpha)}}{\partial y}\right)^{2}+\left(\frac{M_{i}^{(\alpha)}}{\partial z}\right)^{2},
+\]
+
+\end_inset
+
+con 
+\begin_inset Formula $\alpha=x,y,z$
+\end_inset
+
+; y multiplicando y dividiendo por un celda de volumen 
+\begin_inset Formula $\Delta V=a^{3}$
+\end_inset
+
+, se obtiene
+\begin_inset Formula 
+\[
+\mathcal{H}_{\text{ex}}=\frac{1}{2}\left(\frac{2JS^{2}}{a}2\right)\frac{1}{M_{s}^{2}}\sum_{i}\left\{ \left(\boldsymbol{\nabla}M_{i}^{(x)}\right)^{2}+\left(\boldsymbol{\nabla}M_{i}^{(y)}\right)^{2}+\left(\boldsymbol{\nabla}M_{i}^{(z)}\right)^{2}\right\} \Delta V.
+\]
+
+\end_inset
+
+En el límite infinitesimal, 
+\begin_inset Formula $\sum\Delta V\longrightarrow\int dV$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{M}_{i}=\mathbf{M}(\mathbf{x}_{i})\longrightarrow\mathbf{M}=\mathbf{M}(\mathbf{x})$
+\end_inset
+
+.
+ Al pasar a la integral, debemos contar el número efectivo de átomos o momentos
+ atómicos por sitio, que en el caso BCC sería de 2.
+ Con esto en mente, llegamos a la expresión micromagnética de la energía
+ de intercambio, para un arreglo BCC 
+\begin_inset Formula 
+\[
+\mathcal{H}_{\text{ex}}=\frac{1}{2}\underset{A}{\underbrace{\left(\frac{2JS^{2}}{a}2\right)}}\frac{1}{M_{s}^{2}}\int\left\{ \left(\boldsymbol{\nabla}M_{x}\right)^{2}+\left(\boldsymbol{\nabla}M_{y}\right)^{2}+\left(\boldsymbol{\nabla}M_{z}\right)^{2}\right\} dV.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el caso de simetría cúbica y FCC, el cálculo es análogo, solo hay que
+ considerar los vecinos cercanos, partiendo de los vectores primitivos,
+ contar el número de átomos por sitio y realizar las sumas correspondientes.
+ Con ello, se obtiene la definición de la constante de exchange 
+\begin_inset Formula $A=c2JS^{2}/a$
+\end_inset
+
+, en el que 
+\begin_inset Formula $c$
+\end_inset
+
+, el número atómico por sitio, será 1 para simetría cúbica, 2 para la BCC
+ y 4 para la FCC.
+\end_layout
+
+\begin_layout Section
+Frecuencia de resonancia de un elipsoide ferromagnético
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Frecuencia-de-resonancia-elipsoide"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Comenzamos reemplazando la magnetización y campo magnético efectivo en la
+ ecuación de LLG
+\begin_inset Formula 
+\[
+\frac{\partial\left(\mathbf{M}_{0}+\mathbf{m}\right)}{\partial t}=-\gamma\left(\mathbf{M}_{0}+\mathbf{m}(t)\right)\times(\mathbf{H}_{0}+\mathbf{h}(t))+\frac{g}{M_{s}}\left(\mathbf{M}_{0}+\mathbf{m}\right)\times\frac{\partial\left(\mathbf{M}_{0}+\mathbf{m}\right)}{\partial t},
+\]
+
+\end_inset
+
+que claramente nos da
+\begin_inset Formula 
+\[
+\frac{\partial\mathbf{m}}{\partial t}=\underset{\text{condición de eq.}}{-\gamma\underbrace{\mathbf{M}_{0}\times\mathbf{H}_{0}}}-\gamma\mathbf{M}_{0}\times\mathbf{h}-\gamma\mathbf{m}\times\mathbf{H}_{0}-\gamma\underset{2\text{° orden}}{\underbrace{\mathbf{m}\times\mathbf{h}}}+\frac{g}{M_{s}}\mathbf{M}_{0}\times\frac{\partial\mathbf{m}}{\partial t}+\frac{g}{M_{s}}\underset{\text{2° orden}}{\underbrace{\mathbf{m}\times\frac{\partial\mathbf{m}}{\partial t}}}.
+\]
+
+\end_inset
+
+El primer término es nulo y los de segundo orden los despreciamos.
+ Así,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial\mathbf{m}}{\partial t}=-\gamma\mathbf{M}_{0}\times\mathbf{h}-\gamma\mathbf{m}\times\mathbf{H}_{\text{e}0}+\gamma\mathbf{m}\times\widetilde{N}\cdot\mathbf{M}_{0}+\frac{g}{M_{s}}\mathbf{M}_{0}\times\frac{\partial\mathbf{m}}{\partial t}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Luego, tenemos junto con la dependencia armónica de 
+\begin_inset Formula $\mathbf{m}(t)$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{h}(t)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\mathbf{M}_{0}\times\mathbf{h}=M_{s}\hat{z}\times\left(h_{x}\hat{x}+h_{y}\hat{y}\right)=M_{0}\left(-h_{y}\hat{x}+h_{x}\hat{y}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathbf{M}_{0}\times\mathbf{m}=M_{0}\left(-m_{y}\hat{x}+m_{x}\hat{y}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathbf{m}\times\mathbf{H}_{\text{e}0}=H_{\text{e}0}(m_{y}\hat{x}-m_{x}\hat{y})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{m}\times\widetilde{N}\cdot\mathbf{M}_{0}=-N_{z}M_{0}(m_{y}\hat{x}-m_{x}\hat{y})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial\mathbf{m}}{\partial t}=i\omega\mathbf{m}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\partial\mathbf{h}}{\partial t}=i\omega\mathbf{h}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para llegar al sistema de ecuaciones 
+\begin_inset Formula 
+\[
+\left(i\omega+\gamma M_{0}N_{xy}\right)m_{x}+\left(\gamma M_{0}N_{y}+\gamma H_{\text{e}0}-\gamma N_{z}M_{0}+gi\omega\right)m_{y}=\gamma M_{0}h_{\text{e}y}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(-\gamma M_{0}N_{x}-\gamma H_{\text{e}0}+\gamma N_{z}M_{0}-gi\omega\right)m_{x}+\left(i\omega-\gamma M_{0}N_{xy}\right)m_{y}=-\gamma M_{0}h_{\text{ex}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+que pueden escribirse en forma matricial y resolverse para obtener la matrix
+ susceptibilidad 
+\begin_inset Formula $\widetilde{\chi}$
+\end_inset
+
+ invirtiendo la matriz de 2
+\begin_inset Formula $\times$
+\end_inset
+
+2.
+\end_layout
+
+\begin_layout Section
+Anisotropía en el plano
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Anisotropia-en-el-plano"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si quisiéramos una anisotropía con el eje fácil en el eje 
+\begin_inset Formula $z$
+\end_inset
+
+ de nuestro sistema de referencia (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:referencia"
+
+\end_inset
+
+), la energía asociada a ésta estará dada por
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{H}_{\text{a}} & = & -\frac{K_{\text{a}}}{M_{s}^{2}}\int_{V}(\mathbf{M}\cdot\hat{z})^{2}dV\\
+ & = & -\frac{K_{\text{a}}}{M_{s}^{2}}\int_{V}M_{z}^{2}dV
+\end{eqnarray*}
+
+\end_inset
+
+donde hemos denotado la constante de anisotropía como 
+\begin_inset Formula $K_{\text{a}}$
+\end_inset
+
+.
+ Así, utilizando la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Mz"
+
+\end_inset
+
+, debemos calcular
+\begin_inset Formula 
+\begin{eqnarray*}
+M_{z}^{2} & = & \left(M_{Z}\cos\phi_{M}-m_{Y}\sin\phi_{M}\right)^{2}\\
+ & \approx & \left(\left[M_{s}-\frac{m^{2}}{2M_{s}}\right]\cos\phi_{M}-m_{Y}\sin\phi_{M}\right)^{2}
+\end{eqnarray*}
+
+\end_inset
+
+Conservando solo términos hasta segundo orden en la magnetización dinámica
+ 
+\begin_inset Formula $\mathbf{m}$
+\end_inset
+
+, obtenemos
+\begin_inset Formula 
+\[
+M_{Z}^{2}=M_{s}^{2}\cos^{2}\phi_{M}-M_{s}m_{Y}\sin(2\phi_{M})-m_{X}^{2}\cos^{2}\phi_{M}-m_{Y}^{2}\cos(2\phi_{M}),
+\]
+
+\end_inset
+
+donde, hasta ahora, 
+\begin_inset Formula $m_{X,Y}=m_{X,Y}(x,z;t)$
+\end_inset
+
+.
+ Entonces
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{H}_{\text{a}} & = & -\frac{K_{\text{a}}}{M_{s}^{2}}\int_{V}\left\{ M_{s}^{2}\cos^{2}\phi_{M}-M_{s}m_{Y}\sin(2\phi_{M})-m_{X}^{2}\cos^{2}\phi_{M}-m_{Y}^{2}\cos(2\phi_{M})\right\} dV.
+\end{eqnarray*}
+
+\end_inset
+
+El primer término es una constante, así que la omitimos.
+ El término lineal en 
+\begin_inset Formula $m_{Y}$
+\end_inset
+
+ se cancela junto con los términos lineales que surgen en el cálculo de
+ la energía demagnetizante (también proporcionales a 
+\begin_inset Formula $m_{Y}$
+\end_inset
+
+), debido a la condición de equilibrio, ya que con esta anisotropía, llamando
+ 
+\begin_inset Formula $H_{\text{a}}=2K_{\text{a}}/M_{s}$
+\end_inset
+
+ a la magnitud de su campo asociado, tendríamos
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{M}\times\mathbf{H}_{i} & = & (\hat{z}M_{s}\cos\phi_{M}+\hat{y}M_{s}\sin\phi_{M})\times\left(\hat{z}\left[H_{0}\cos\phi_{H}+H_{\text{a}}\right]\right)\\
+ &  & +\hat{y}H_{0}\sin\phi_{H}-\hat{y}4\pi M_{s}\sin\phi_{M}\\
+ & = & M_{s}H_{0}\sin(\phi_{M}-\phi_{H})+\left(\frac{4\pi M_{s}+H_{\text{a}}}{2}\right)M_{s}\sin(2\phi_{M})
+\end{eqnarray*}
+
+\end_inset
+
+y con la condición 
+\begin_inset Formula $\mathbf{M}\times\mathbf{H}_{i}=0$
+\end_inset
+
+, el término con 
+\begin_inset Formula $H_{\text{a}}$
+\end_inset
+
+ se anula con los demás coeficientes.
+\end_layout
+
+\begin_layout Standard
+Luego, transformamos en Fourier (ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:m-Fourier"
+
+\end_inset
+
+) los términos de segundo orden
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{H}_{\text{a}} & = & \frac{K_{\text{a}}}{M_{s}^{2}}\frac{1}{L^{2}d}\sum_{\mathbf{k},\mathbf{k}'}\int_{V}\left\{ \cos^{2}\phi_{M}\,m_{X}(\mathbf{k};t)m_{X}(\mathbf{k}';t)e^{i(\mathbf{k}+\mathbf{k}')\cdot\mathbf{r}}\right.\\
+ &  & \qquad\qquad\qquad\qquad+\left.\cos(2\phi_{M})\,m_{Y}(\mathbf{k};t)m_{Y}(\mathbf{k}';t)e^{i(\mathbf{k}+\mathbf{k}')\cdot\mathbf{r}}\right\} dV,
+\end{eqnarray*}
+
+\end_inset
+
+e integramos las exponenciales para formar las deltas (ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Fourier-delta"
+
+\end_inset
+
+), recordando que 
+\begin_inset Formula $\mathbf{k}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{r}$
+\end_inset
+
+ se refieren a los vectores en el plano.
+ Finalmente, aplicando las propiedades de la magnetización dinámica, llegamos
+ a
+\begin_inset Formula 
+\[
+\mathcal{H}_{\text{a}}=\frac{1}{2M_{s}}\sum_{\mathbf{k}}H_{\text{a}}\left\{ \cos^{2}\phi_{M}\,m_{X}^{*}(\mathbf{k};t)m_{X}(\mathbf{k};t)+\cos(2\phi_{M})\,m_{Y}^{*}(\mathbf{k};t)m_{Y}(\mathbf{k};t)\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo tanto, los coeficientes se agregan respectivamente a 
+\begin_inset Formula $\mathcal{W}_{X}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{W}_{Y}$
+\end_inset
+
+, de forma que nos quedaría (ver ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:coeficientes-DMI"
+
+\end_inset
+
+) 
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{W}_{X}(0) & = & H_{0}\cos(\phi_{H}-\phi_{M})-4\pi M_{s}\sin^{2}\phi_{M}+H_{\text{a}}\cos^{2}\phi_{M}\\
+\mathcal{W}_{Y}(0) & = & H_{0}\cos(\phi_{H}-\phi_{M})+4\pi M_{s}\cos(2\phi_{M})+H_{\text{a}}\cos(2\phi_{M}).
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Dinámica del sistema
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Dinamica-del-sistema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la dinámica del sistema debemos calcular
+\begin_inset Formula 
+\[
+{\displaystyle \begin{array}{ccl}
+\left[m_{X,Y}(\mathbf{k};t),\mathcal{H}\right] & = & {\displaystyle \frac{1}{2M_{s}}\sum_{\mathbf{k}'}\biggl\{\mathcal{W}_{X}(\mathbf{k}')\left[m_{X,Y}(\mathbf{k};t),m_{X}^{*}(\mathbf{k}';t)m_{X}(\mathbf{k}';t)\right]}\\
+ &  & \hspace{80bp}{\displaystyle +\mathcal{W}_{Y}(\mathbf{k}')\left[m_{X,Y}(\mathbf{k};t),m_{Y}^{*}(\mathbf{k}';t)m_{Y}(\mathbf{k}';t)\right]}\\
+ &  & \hspace{80bp}{\displaystyle +\mathcal{W}_{XY}(\mathbf{k}')\left[m_{X,Y}(\mathbf{k};t),m_{X}^{*}(\mathbf{k}';t)m_{Y}(\mathbf{k}';t)\right]}\\
+ &  & \hspace{80bp}{\displaystyle +\mathcal{W}_{YX}(\mathbf{k}')\left[m_{X,Y}(\mathbf{k};t),m_{Y}^{*}(\mathbf{k}';t)m_{X}(\mathbf{k}';t)\right]}\biggr\}
+\end{array}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es fácil ver que
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[m_{X}(\mathbf{k};t),m_{Y}^{*}(\mathbf{k}';t)m_{Y}(\mathbf{k}';t)\right] & = & i\mu_{0}M_{s}\left(\delta_{\mathbf{k},\mathbf{k}'}+\delta_{\mathbf{k},-\mathbf{k}'}\right)m_{Y}(\mathbf{k};t)\\
+\left[m_{X}(\mathbf{k};t),m_{Y}^{*}(\mathbf{k}';t)m_{X}(\mathbf{k}';t)\right] & = & i\mu_{0}M_{s}\delta_{\mathbf{k},\mathbf{k}'}m_{X}(\mathbf{k};t)\\
+\left[m_{X}(\mathbf{k};t),m_{X}^{*}(\mathbf{k}';t)m_{Y}(\mathbf{k}';t)\right] & = & i\mu_{0}M_{s}\delta_{\mathbf{k},-\mathbf{k}'}m_{X}^{*}(-\mathbf{k};t)\\
+\left[m_{Y}(\mathbf{k};t),m_{X}^{*}(\mathbf{k}';t)m_{X}(\mathbf{k}';t)\right] & = & -i\mu_{0}M_{s}\left(\delta_{\mathbf{k},\mathbf{k}'}+\delta_{\mathbf{k},-\mathbf{k}'}\right)m_{X}(\mathbf{k};t)\\
+\left[m_{Y}(\mathbf{k};t),m_{X}^{*}(\mathbf{k}';t)m_{Y}(\mathbf{k}';t)\right] & = & -i\mu_{0}M_{s}\delta_{\mathbf{k},\mathbf{k}'}m_{Y}(\mathbf{k};t)\\
+\left[m_{Y}(\mathbf{k};t),m_{Y}^{*}(\mathbf{k}';t)m_{X}(\mathbf{k}';t)\right] & = & -i\mu_{0}M_{s}\delta_{\mathbf{k},-\mathbf{k}'}m_{Y}(\mathbf{k};t)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Luego, reemplazamos en el conmutador y utilizamos las siguientes propiedades:
+ al hacer 
+\begin_inset Formula $\mathbf{k}\longrightarrow-\mathbf{k}$
+\end_inset
+
+, debemos cambiar el ángulo 
+\begin_inset Formula $\phi_{\mathbf{k}}$
+\end_inset
+
+ por 
+\begin_inset Formula $\phi_{\mathbf{k}}+\pi$
+\end_inset
+
+, de forma que 
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{W}_{Y}(-\mathbf{k}) & = & \mathcal{W}_{Y}(\mathbf{k})\\
+\mathcal{W}_{X}(-\mathbf{k}) & = & \mathcal{W}_{X}(\mathbf{k})\\
+\mathcal{W}_{XY}(-\mathbf{k}) & = & -4\pi M_{s}F(kd)\sin\phi_{-\mathbf{k}}\cos\phi_{-\mathbf{k}}\sin\phi_{M}+i\Im[\mathcal{W}_{XY}(-\mathbf{k})]
+\end{eqnarray*}
+
+\end_inset
+
+En la tercera ecuación, como 
+\begin_inset Formula $\sin\phi_{-\mathbf{k}}=\sin(\phi_{\mathbf{k}}+\pi)=-\sin\phi_{\mathbf{k}}$
+\end_inset
+
+ y 
+\begin_inset Formula $\cos\phi_{-\mathbf{k}}=\cos(\phi_{\mathbf{k}}+\pi)=-\cos\phi_{\mathbf{k}}$
+\end_inset
+
+, la parte real queda igual, pero la parte imaginaria cambiará de signo,
+ ya que si vemos la Tabla 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "tab:Asymmetries"
+
+\end_inset
+
+, de las asimetrías, las partes imaginarias para cualquier grupo puntual
+ son siempre proporcionales a 
+\begin_inset Formula $\sin\phi_{\mathbf{k}}$
+\end_inset
+
+ o a 
+\begin_inset Formula $\cos\phi_{\mathbf{k}}$
+\end_inset
+
+, de manera que 
+\begin_inset Formula 
+\[
+\mathcal{W}_{XY}(-\mathbf{k})=\Re[\mathcal{W}_{XY}(\mathbf{k})]-i\Im[\mathcal{W}_{XY}(\mathbf{k})]=\mathcal{W}_{YX}(\mathbf{k})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con esto en mente, volvemos a la ecuación de Heisenberg para llegar a (recordar
+ que 
+\begin_inset Formula $\hbar\gamma=-\mu_{0}$
+\end_inset
+
+) 
+\begin_inset Formula 
+\begin{eqnarray*}
+\dot{m}_{X}(\mathbf{k}) & = & -\gamma\left\{ \mathcal{W}_{Y}(\mathbf{k})m_{Y}(\mathbf{k})+\mathcal{W}_{YX}(\mathbf{k})m_{X}(\mathbf{k})\right\} \\
+\dot{m}_{Y}(\mathbf{k}) & = & \gamma\left\{ \mathcal{W}_{X}(\mathbf{k})m_{X}(\mathbf{k})+\mathcal{W}_{XY}(\mathbf{k})m_{X}(\mathbf{k})\right\} 
+\end{eqnarray*}
+
+\end_inset
+
+la cual podemos escribir como
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+\dot{m}_{X}\\
+\dot{m}_{Y}
+\end{array}\right)=\gamma\left(\begin{array}{cc}
+-\mathcal{W}_{YX} & -\mathcal{W}_{Y}\\
+\mathcal{W}_{X} & \mathcal{W}_{XY}
+\end{array}\right)\left(\begin{array}{c}
+m_{X}\\
+m_{Y}
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Luego, para resolver, suponemos 
+\begin_inset Formula $m_{X,Y}(\mathbf{k};t)=\mathcal{M}_{X,Y}(\mathbf{k})e^{-i\Omega t}$
+\end_inset
+
+ y hacemos el determinante cero para obtener soluciones no triviales de
+ los modos normales,
+\begin_inset Formula 
+\[
+\left|\begin{array}{cc}
+-\gamma\mathcal{W}_{YX}+i\Omega & -\gamma\mathcal{W}_{Y}\\
+\gamma\mathcal{W}_{X} & \gamma\mathcal{W}_{XY}+i\Omega
+\end{array}\right|=0.
+\]
+
+\end_inset
+
+De esta forma, obtenemos la ecuación característica
+\begin_inset Formula 
+\[
+\Omega^{2}-i\gamma\left(\mathcal{W}_{XY}-\mathcal{W}_{YX}\right)-\gamma^{2}\left(\mathcal{W}_{X}\mathcal{W}_{Y}-\mathcal{W}_{XY}\mathcal{W}_{YX}\right)=0,
+\]
+
+\end_inset
+
+donde el resto del cálculo es directo.
+\end_layout
+
+\begin_layout Section
+Energía de las IDM
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Energia-de-las-IDM"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con el objetivo de obtener la energía o hamiltoniano de las interacciones
+ asimétricas, comenzamos con el cálculo de la expresión 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:MnSi-Invariants"
+
+\end_inset
+
+, donde calcularemos por separado
+\begin_inset Formula 
+\[
+\mathcal{L}=\underset{{\displaystyle (1)}}{\underbrace{M_{x}\frac{\partial M_{z}}{\partial y}-M_{z}\frac{\partial M_{x}}{\partial y}}}+\underset{{\displaystyle (2)}}{\underbrace{M_{z}\frac{\partial M_{y}}{\partial x}-M_{y}\frac{\partial M_{z}}{\partial x}}}+\underset{{\displaystyle (3)}}{\underbrace{M_{y}\frac{\partial M_{x}}{\partial z}-M_{X}\frac{\partial M_{y}}{\partial z}}}.
+\]
+
+\end_inset
+
+Claramente, (1) se anula debido a que no tenemos dependencia en 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Haciendo uso de las relaciones 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Mx"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:My"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Mz"
+
+\end_inset
+
+, obtenemos los otros dos términos, así que
+\begin_inset Formula 
+\[
+\begin{array}{ccl}
+(1) & = & 0\\
+(2) & = & {\displaystyle M_{Z}\frac{\partial m_{Y}}{\partial x}-m_{Y}\frac{\partial M_{Z}}{\partial x}}\\
+(3) & = & {\displaystyle (M_{Z}\sin\phi_{M}+m_{Y}\cos\phi_{M})\frac{\partial m_{x}}{\partial z}-m_{x}\sin\phi_{M}\frac{\partial M_{Z}}{\partial z}-m_{x}\cos\phi_{M}\frac{\partial m_{Y}}{\partial x}}
+\end{array}
+\]
+
+\end_inset
+
+Recordando que 
+\begin_inset Formula $M_{Z}\approx M_{s}-m^{2}/2M_{s}$
+\end_inset
+
+, sumamos y dejamos solo los términos hasta segundo orden, para obtener
+ la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:T-invariant-second-order"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Habíamos señalado que los términos lineales se anulaban, esto se debe a
+ que, al transformar la expresión
+\begin_inset Formula 
+\[
+\mathcal{H}_{\text{DM}}^{\text{lineal}}=\lambda_{\text{DM}}\,d\int\left[M_{s}\frac{\partial m_{Y}(\mathbf{r};t)}{\partial x}+M_{s}\sin\phi_{M}\frac{\partial m_{X}(\mathbf{r};t)}{\partial z}\right]\,dx\,dz
+\]
+
+\end_inset
+
+en Fourier, nos queda
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{H}_{\text{DM}}^{\text{lineal}} & = & \lambda_{\text{DM}}M_{s}\sum_{\mathbf{k}}\left\{ \left[m_{Y}(\mathbf{k};t)ik_{x}+\sin\phi_{M}m_{X}(\mathbf{k};t)ik_{z}\right]\frac{1}{L^{2}}\int e^{i\mathbf{k}\cdot\mathbf{r}}dx\,dz\right\} \\
+ & = & =\lambda_{\text{DM}}M_{s}i\sum_{\mathbf{k}}\left[m_{Y}(\mathbf{k};t)\sin\phi_{\mathbf{k}}+\sin\phi_{M}m_{X}(\mathbf{k};t)\cos\phi_{\mathbf{k}}\right]k\,\delta_{\mathbf{k},0}
+\end{eqnarray*}
+
+\end_inset
+
+Y ya es obvio que con la delta, el vector de onda se anula, así que podemos
+ decir que, efectivamente, 
+\begin_inset Formula $\mathcal{H}_{\text{DM}}^{\text{lineal}}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Invariantes para una red cuadrada bcc(001)
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Invariantes-para-un-lattice"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solo daremos más detalles de los cálculos realizados para este ejemplo.
+ Teníamos la expresión
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{H}_{\text{DM}} & = & \sum_{i,j}\mathbf{D}_{ij}\cdot\left(\mathbf{S}_{i}\times\mathbf{S}_{j}\right)\\
+ & = & \sum_{i,j}\mathbf{D}_{ij}\cdot\left\{ \left(S_{i}^{(y)}S_{j}^{(z)}-S_{i}^{(z)}S_{j}^{(y)}\right)\hat{x}+\left(S_{i}^{(x)}S_{j}^{(y)}-S_{i}^{(y)}S_{j}^{(x)}\right)\hat{z}\right\} 
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La componente en 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ no la escribimos porque ninguno de los vectores de Dzyaloshinskii tiene
+ esta componente.
+ Fácilmente notamos que entre el vecino con 
+\begin_inset Formula $j=i+x$
+\end_inset
+
+, solo sobrevivirá la componente con 
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+ y, análogamente, el vecino 
+\begin_inset Formula $j=i+z$
+\end_inset
+
+ con la componente 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+.
+ De esta manera se obtiene la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:invariants-bcc001"
+
+\end_inset
+
+.
+ Luego, reemplazando en el límite al continuo
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{H}_{\text{DM}} & = & \frac{S^{2}D}{M_{s}}\sum_{\mathbf{x}}\left\{ -M_{y}(x,y,z)M_{z}(x,y,z+\Delta z)+M_{z}(x,y,z)M_{y}(x,y,z+\Delta z)\right.\\
+ &  & \qquad\qquad\left.+M_{x}(x,y,z)M_{y}(x+\Delta x,y,z)-M_{y}(x,y,z)M_{x}(x+\Delta x,y,z)\right\} 
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Y con las aproximaciones
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{H}_{\text{DM}} & = & \frac{S^{2}D}{M_{s}}\sum_{\mathbf{x}}\left\{ -M_{y}\left(M_{z}+\frac{\partial M_{z}}{\partial z}\Delta z\right)+M_{z}\left(M_{y}+\frac{\partial M_{y}}{\partial z}\Delta z\right)\right.\\
+ &  & \qquad\qquad\left.+M_{x}\left(M_{y}+\frac{\partial M_{y}}{\partial x}\Delta x\right)-M_{y}\left(M_{x}+\frac{\partial M_{x}}{\partial x}\Delta x\right)\right\} \\
+ & \underset{\Delta V\rightarrow0}{=} & -\frac{S^{2}D}{M_{s}a^{2}}\int_{V}\left\{ \mathcal{L}_{yz}^{(z)}+\mathcal{L}_{yx}^{(x)}\right\} dV
+\end{eqnarray*}
+
+\end_inset
+
+donde notamos que, en la primera igualdad, se cancelan vario términos, quedándon
+os exactamente la forma de los invariantes.
+ Además, la red es cúbica, por lo que basta con multiplicar por 
+\begin_inset Formula $a^{2}$
+\end_inset
+
+, la distancia entre vecinos cercanos de ésta.
+\end_layout
+
+\begin_layout Section
+Invariantes para una red bcc(110)
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Invariantes-lattice-bcc110"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Teníamos inicialmente
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{H}_{\text{DM}}^{(1)} & = & \sum_{i}\left\{ -D_{z}\left(S_{i}^{(x)}S_{i+\boldsymbol{\epsilon}_{1}}^{(y)}-S_{i}^{(y)}S_{i+\boldsymbol{\epsilon}_{1}}^{(x)}\right)+D_{x}\left(S_{i}^{(y)}S_{i+\boldsymbol{\epsilon}_{1}}^{(z)}-S_{i}^{(z)}S_{i+\boldsymbol{\epsilon}_{1}}^{(y)}\right)\right\} \\
+ & = & \sum_{i}\left\{ -D_{z}\left[S_{i}^{(x)}S^{(y)}(\mathbf{x}_{i}+\boldsymbol{\epsilon}_{1})-S_{i}^{(y)}S^{(x)}(\mathbf{x}_{i}+\boldsymbol{\epsilon}_{1})\right]\right.\\
+ &  & \qquad\qquad\left.+D_{x}\left[S_{i}^{(y)}S^{(z)}(\mathbf{x}_{i}+\boldsymbol{\epsilon}_{1})-S_{i}^{(z)}S^{(y)}(\mathbf{x}_{i}+\boldsymbol{\epsilon}_{1})\right]\right\} ,
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Luego, con la notación 
+\begin_inset Formula $\mathcal{H}_{\text{DM}}^{(\alpha)}=\sum_{i}\mathcal{S}_{i}^{(\alpha)}$
+\end_inset
+
+, expandiendo y simplificando, según corresponda, obtenemos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{S}_{i}^{(1)} & = & -D_{z}\left[S_{i}^{(x)}\left(\frac{\partial S_{i}^{(y)}}{\partial z}\Delta z+\frac{\partial S_{i}^{(y)}}{\partial x}\Delta x\right)-S_{i}^{(y)}\left(\frac{\partial S_{i}^{(x)}}{\partial z}\Delta z+\frac{\partial S_{i}^{(x)}}{\partial x}\Delta x\right)\right]\\
+ &  & \qquad+D_{x}\left[S_{i}^{(y)}\left(\frac{\partial S_{i}^{(z)}}{\partial z}\Delta z+\frac{\partial S_{i}^{(z)}}{\partial x}\Delta x\right)-S_{i}^{(z)}\left(\frac{\partial S_{i}^{(y)}}{\partial z}\Delta z+\frac{\partial S_{i}^{(y)}}{\partial x}\Delta x\right)\right].
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Análogamente,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{H}_{\text{DM}}^{(2)} & = & \sum_{i}\left\{ -D_{z}\left[S_{i}^{(x)}S_{i+\boldsymbol{\epsilon}_{2}}^{(y)}-S_{i}^{(y)}S_{i+\boldsymbol{\epsilon}_{2}}^{(x)}\right]-D_{x}\left[S_{i}^{(y)}S_{i+\boldsymbol{\epsilon}_{2}}^{(z)}-S_{i}^{(z)}S_{i+\boldsymbol{\epsilon}_{2}}^{(y)}\right]\right\} \\
+ & = & \sum_{i}\mathcal{S}_{i}^{(2)}\\
+\mathcal{S}_{i}^{(2)} & = & -D_{z}\left[S_{i}^{(x)}\left(-\frac{\partial S_{i}^{(y)}}{\partial z}\Delta z+\frac{\partial S_{i}^{(y)}}{\partial x}\Delta x\right)-S_{i}^{(y)}\left(-\frac{\partial S_{i}^{(x)}}{\partial z}\Delta z+\frac{\partial S_{i}^{(x)}}{\partial x}\Delta x\right)\right]\\
+ &  & -D_{x}\left[S_{i}^{(y)}\left(-\frac{\partial S_{i}^{(z)}}{\partial z}\Delta z+\frac{\partial S_{i}^{(z)}}{\partial x}\Delta x\right)-S_{i}^{(x)}\left(-\frac{\partial S_{i}^{(z)}}{\partial z}\Delta z+\frac{\partial S_{i}^{(z)}}{\partial x}\Delta x\right)\right].
+\end{eqnarray*}
+
+\end_inset
+
+Luego, basta con simplificar los términos similares y llegamos a las expresiones
+ utilizadas en la Sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Arreglo-bcc(110)"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "/home/david/Dropbox/References-thesis"
+options "bibtex/unsrtcolor"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
